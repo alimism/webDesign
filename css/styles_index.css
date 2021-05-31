@@ -1,4 +1,7 @@
+/*Iconos*/
 @import url('../img/5 - Icon font/dist/css/style.css');
+
+/*Paleta de Colores*/
 :root{
 
     --negro1:  #111111;
@@ -9,155 +12,223 @@
     
 }
 
+/*Background*/
+
 html{
     height: 100%;
+    font-family: -apple-system, Roboto, sans-serif;
 }
 
 body{
-    font-family: Roboto;
-    background-image: url(../img/Recurso\ 1.png);
-    background-size: cover;
-    border:none;
-    background-repeat: repeat;
+  background-image: url(../img/Recurso\ 1.png);
+  background-size: cover;
+  border:none;
+  background-repeat: repeat;
+  
 }
-/*
-a #logo{
-    width: 10%;
-}
-*/
 
 *{
-    margin: 0;
-    box-sizing: border-box;     
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
 }
-
-a, a:hover{
-    text-decoration:none;
-    color:var(--blanco);
-
-
-}
-
-ul {list-style: none;}
-
-li{
-    display: inline-block;
-}
-
-.header .navbar{
-    width:90%;
-    height:80px;
-    margin: auto;
-    color: var(--blanco);
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 50px;
-
-}
-.header .navbar .logo{
-    margin-left: 50px;
-}
-.header .navbar .menu ul li{
-    margin-right: 30px;
-}
-
-.logo{
+ 
+#img-logo{
     width:100px;
     cursor:pointer;
 }
-
-.header .navbar .menu ul li a{
-    font: size 16px;
-    font-weight:bold;
-    transition: all 0.5s;
-    opacity:0.6;
-}
-
-.header .navbar .menu ul li a.active{
-    opacity:1;
-    color: var(--turquesa);
-    border-bottom: 1px solid;
-    transition: width .4s;
-
-}
-
-.header .navbar .menu ul li a:hover{
-    opacity:1;
-    color: var(--turquesa);
-    border-bottom: 1px solid;
-}
-
-.header .navbar .icons ul li {
-    margin-left: 15px;
-    text-align: center;
+  .wrapper{
+    width: 100%;
+    height:100vh;
+  }
+  
+  .wrapper .navbar{
+    width: 90%;
+    height: 80px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 50px;
+    align-content: center;
+  }
 
-}
-
-.search-box{
-    height:40px;
-    background-color:var(--turquesa);
-    border-radius: 40px;
-    padding: 10px;
-
-}
-
-.search-box:hover > .search-txt{
-    width:240px;
-    padding:0 6px;
-
-}
-
-.iconly-Search{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
-    border-radius:50%;
-
-}
-
-.search-txt{
+  .menu{
+      align-items: center;
+      /*position: absolute;
+      left:34.5%; Ajustar el menu más centrado*/
+      border:none;
+  }
+  /*Pone las categorias del menu y los iconos en una linea horizontal en vez de uno tras otro*/
+.categories, .ico{
+    display: inline-block;    
+  }
+/*Margen especifico entre categorias*/
+  .categories{
+    margin-right: 30px;
     border:none;
-    background: none;
-    outline: none;
-    float: left;
-    padding:0;
-    color: var(--blanco);
-    font-size:16px;
-    transition: 0.4s;
-    width:0px;
-
-}
-
-/*
-.navbar{
-    display:flex;
-    align-items:center;
-}
-
-nav{
-    flex: 1;
-    text-align: center;
-}
-
-nav ul li{
-    list-style: none;
-    display:inline-block;
-    margin-left: 3rem;
-
-}
-
-nav ul li a{
-    text-decoration: none;
+  }
+/*Margen entre iconos y color*/
+  .ico{
+    margin-right:10px;
+    color:var(--blanco);
+  }
+/*Ingresa a cada texto de la categoría*/
+  .wrapper .navbar .menu .categories a{
     color: var(--blanco);
     font-size: 16px;
     font-weight: bold;
+    transition: all 0.5s;
+    opacity:0.6;    
+  }
+  /*Cuando pasas el mouse (hover)*/
+  .wrapper .navbar .menu .categories a.active, .wrapper .navbar .menu .categories a:hover{
+    opacity:1;
+    color: var(--turquesa);
+    border-bottom: 1px solid;
+    transition: width .4s;  
+  }
+  
+
+  .searchbar{
+    position: relative;
+    margin-left: 0;
+  }
+  
+  .searchbar input[type="text"]{
+    border: 0;
+    padding: 0;
+    width:0;
+    height: 35px;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+  }
+  
+  .searchbar #search{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 35px;
+    height: 100%;
+    background: none;
+    border-radius: 40px;
+    color: #fff;
+    transition: all 0.5s 0.3s ease;
+
+  }
+  
+  .searchbar #search i{
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+  }
+  
+
+  
+  .searchbar #search.active{
+    background: var(--turquesa);
+    transition: all 0.3s ease;
+  }
+  
+  .searchbar input[type="text"].active{
+    width: 250px;
+    padding: 0 10px;
+    transition: all 0.5s 0.2s ease;
+  }
+
+  .icons .ico{
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    
 }
-*/
+
+
+  /*  
+  @media screen and (max-width: 730px){
+    .wrapper .navbar{
+      padding: 0px;
+      flex-direction: column;
+      height: 200px;
+      justify-content: center;
+    }
+    .wrapper .navbar .menu ul li{
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+    }
+    .searchbar #search{
+      margin-right: -20px;
+    }
+  }
+
+  .slider-area { width:80%; position:relative; margin:0 auto; padding:5px;}
+/*-------------------------
+[9. Block slider]
+---------------------------*/
+.block-slider{
+	border:none;
+	width: 100%;
+}
+.block-slider ul li{
+	list-style: none;
+}
+.block-slider .bx-pager{
+	display: none;
+}
+.block-slider .bx-prev,.block-slider .bx-next{
+	width: 32px;
+	height: 32px;
+	border: 1px solid #eaeaea;
+	text-align: center;
+	display: block;
+	border-radius: 50%;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	line-height: 29px;
+	-moz-transition: all 0.45s ease;
+	-webkit-transition: all 0.45s ease;
+	-o-transition: all 0.45s ease;
+	-ms-transition: all 0.45s ease;
+	transition: all 0.45s ease;
+}
+.block-slider img{
+	width: 100%;
+	height: auto;
+}
+.block-slider .bx-prev{
+	left: 0px;
+	padding-right: 3px;
+}
+.block-slider .bx-next{
+	right: 0px;
+	padding-left: 3px;
+}
+.block-slider:hover .bx-prev{
+	left: 10px;
+}
+.block-slider:hover .bx-next{
+	right: 10px;
+}
+.block-slider .bx-prev:hover,
+.block-slider .bx-next:hover{
+	background: #5a88ca;
+	color: #fff;
+	border-color: #5a88ca;
+}
+
+  
+/*Paths from Left and Right*/
 #left, #right {
     position:absolute;
+    z-index: -1;
     
 }
 
@@ -170,6 +241,8 @@ nav ul li a{
 #right{
     top:20%;
     right:0;
-    z-index: 1;
+   
 }
+
+
 

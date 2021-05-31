@@ -1,0 +1,272 @@
+/*Iconos*/
+@import url('../img/5 - Icon font/dist/css/style.css');
+
+/*Paleta de Colores*/
+:root{
+
+    --negro1:  #111111;
+    --negro2: #222222;
+    --negro3: #333333;
+    --turquesa: #19b5ff;
+    --turquesargba: rgba(25, 181, 255, 0.508);
+    --blanco: #fffbfc;
+    
+}
+
+/*Background*/
+
+html{
+    height: 100%;
+    font-family: -apple-system, Roboto, sans-serif;
+}
+
+body{
+  background: rgb(1,4,0);
+  background: linear-gradient(222deg, rgba(1,4,0,1) 0%, rgba(48,51,46,1) 100%);
+  text-align: center;
+  color: var(--blanco);
+}
+
+.navbar{
+  width: 90%;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.icbo{
+  color:var(--blanco);
+}
+
+.ico{
+  margin-right:10px;
+  display: inline-block;
+}
+
+.searchbar{
+  position: relative;
+  margin-left: 0;
+  width: 200px;
+}
+
+.searchbar input[type="text"]{
+  border: 0;
+  padding: 0;
+  width:0;
+  height: 35px;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+
+.searchbar #search{
+  position: absolute;
+  top: 0;
+  right:0;
+  width: 35px;
+  height: 100%;
+  background: none;
+  border-radius: 40px;
+  color: #fff;
+  transition: all 0.5s 0.3s ease;
+
+}
+
+.searchbar #search i{
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+
+
+
+.searchbar #search.active{
+  background: var(--turquesa);
+  transition: all 0.3s ease;
+}
+
+.searchbar input[type="text"].active{
+  width: 200px;
+  padding: 0 10px;
+  transition: all 0.5s 0.2s ease;
+}
+
+.icons .ico{
+  justify-content: center;
+  align-items: center;
+  border-radius:50%;
+  
+}
+
+.icons{
+right: 5%;
+  position: absolute;
+}
+
+.container .box-title h1 , .container .box-title h4{
+  text-align: center;
+  color:var(--turquesa);
+  font-weight: bold;
+  
+}
+
+.container .box-title .behind{
+  z-index: 3;
+  opacity:0.25;
+}
+
+.container .box-title .into{
+  z-index: 5;
+  margin-top: -3%;
+}
+
+.tt-type{
+  margin-top: 2%;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 1%;
+  margin-bottom: 0;
+  color: var(--blanco);
+}
+
+.info li{
+  display: inline-block;
+  color: var(--blanco);
+  padding:8.5%;
+  padding-top:4%;
+}
+
+.box{
+	width:250px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 25px;
+  
+}
+.slide-img{
+	height: 250px;
+	position:relative;
+}
+.slide-img img{
+	width:100%;
+	height: 100%;
+	object-fit: cover;
+	box-sizing: border-box;
+}
+.detail-box{
+	width: 100%;
+display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	box-sizing: border-box;
+}
+
+.type{
+	display: flex;
+	flex-direction: column;
+}
+.type a{
+	color:var(--blanco);
+	margin: 5px 0px;
+	letter-spacing: 0.5px;
+	padding-right: 8px;
+  font-weight: bold;
+  text-align: left;
+}
+.type span{
+	color:var(--blanco);
+  font-style: italic;
+  text-align: left;
+}
+.price{
+	color: var(--negro1);
+  background-color:var(--turquesa);
+  border-radius: 15px;
+  padding: 3%;
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+.overlay{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width:100%;
+	height: 100%;
+	background-color: var(--turquesargba);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.buy-btn{
+	width:160px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFFFFF;
+	color:#252525;
+	font-weight: 700;
+	border-radius: 20px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+}
+.buy-btn:hover{
+	color:var(--blanco);
+	background-color: var(--negro3);
+	transition: all ease 0.3s;
+}
+.overlay{
+	visibility: hidden;
+}
+.slide-img:hover .overlay{
+	visibility: visible;
+	animation:fade 0.5s;
+}
+ 
+@keyframes fade{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.slider{
+	width:100%;
+	height: 55vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ 
+
+.navbar .megamenu{ padding: 1rem; }
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	
+	.navbar .has-megamenu{position:static!important;}
+	.navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+	  .navbar .navbar-nav{
+    margin-left: 24.8%;
+  }
+
+}
+
+/* ============ desktop view .end// ============ */
+
+
+/* ============ mobile view ============ */
+@media(max-width: 990px){
+	.navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+		overflow-y: auto;
+	    max-height: 90vh;
+	    margin-top:10px;
+	}
+  .icons{opacity:0;}
+
+
+}
