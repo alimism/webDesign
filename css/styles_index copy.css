@@ -138,6 +138,22 @@ right: 5%;
   padding-top:4%;
 }
 
+.demo{
+  width:90%;
+  margin:0 auto;
+}
+
+
+#lightSlider li{
+  text-align:left;
+}
+
+#lightSlider li img{
+  width: 100%;
+}
+
+
+
 .box{
 	width:250px;
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
