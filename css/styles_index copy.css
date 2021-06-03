@@ -152,9 +152,6 @@ right: 5%;
   width: 100%;
 }
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
@@ -307,6 +304,11 @@ display: flex;
 	    margin-top:10px;
 	}
   .icons{opacity:0;}
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
 
 
 }
