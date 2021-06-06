@@ -7356,7 +7356,7 @@ textarea.form-control-lg {
 }
 
 .text-light {
-  color: #f8f9fa !important;
+  color: var(--bs-white) !important;
 }
 
 .text-dark {
@@ -7388,7 +7388,7 @@ textarea.form-control-lg {
 }
 
 .bg-primary {
-  background-color: #0d6efd !important;
+  background-color: var(--bs-primary) !important;
 }
 
 .bg-secondary {
