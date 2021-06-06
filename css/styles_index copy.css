@@ -20,12 +20,25 @@ html{
     font-family: -apple-system, Roboto, sans-serif;
 }
 
-body{
+body{/*
   background: rgb(1,4,0);
-  background: linear-gradient(222deg, rgba(1,4,0,1) 0%, rgba(48,51,46,1) 100%);
+  background: linear-gradient(222deg, rgba(1,4,0,1) 0%, rgba(48,51,46,1) 100%);*/
   text-align: center;
   color: var(--blanco);
 }
+/*Configurando Fondo al 100%*/
+#fondo {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -20;
+}
+
+/*Navbar start*/
 
 .navbar{
   width: 90%;
@@ -34,6 +47,8 @@ body{
   justify-content: space-between;
   padding-top: 50px;
 }
+
+.navbar .megamenu{ padding: 1rem; }
 
 .icbo{
   color:var(--blanco);
@@ -80,8 +95,6 @@ body{
   cursor: pointer;
 }
 
-
-
 .searchbar #search.active{
   background: var(--turquesa);
   transition: all 0.3s ease;
@@ -102,8 +115,12 @@ body{
 
 .icons{
 right: 5%;
-  position: absolute;
+position: absolute;
 }
+
+/*>>>>>>>>>>>>END*/
+
+/*Tittles for Tienda, Marcas and Experiencia*/
 
 .container .box-title h1 , .container .box-title h4{
   text-align: center;
@@ -138,19 +155,9 @@ right: 5%;
   padding-top:4%;
 }
 
-.demo{
-  width:90%;
-  margin:0 auto;
-}
+/*>>>>>>>>>>>>END*/
 
-
-#lightSlider li{
-  text-align:left;
-}
-
-#lightSlider li img{
-  width: 100%;
-}
+/*First Carousel*/
 
 /* Carousel base class */
 .carousel {
@@ -174,7 +181,44 @@ right: 5%;
   height: 32rem;
 }
 
+#stars-cr .not, .not-disc{
+    opacity:0.35;
+}
 
+.carousel-caption h1{
+  font-weight: bold;
+  color:var(--turquesa);
+}
+
+.carousel-caption{
+  width:33%;
+  text-align: justify;
+}
+
+
+#nxtcr{
+  margin-top:-3.5%;
+  margin-bottom:3%;
+}
+
+.not-disc{
+  text-decoration: line-through;
+}
+
+.price-final{
+  font-weight: bold;
+}
+
+.add{
+  border-radius: 900px;
+  margin-top: 2%;
+}
+
+
+
+/*>>>>>>>>>>>>END*/
+
+/*Sliders for Store*/
 .box{
 	width:250px;
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
@@ -238,6 +282,8 @@ display: flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+  visibility: hidden;
+
 }
 .buy-btn{
 	width:160px;
@@ -256,9 +302,7 @@ display: flex;
 	background-color: var(--negro3);
 	transition: all ease 0.3s;
 }
-.overlay{
-	visibility: hidden;
-}
+
 .slide-img:hover .overlay{
 	visibility: visible;
 	animation:fade 0.5s;
@@ -274,14 +318,29 @@ display: flex;
 }
 .slider{
 	width:100%;
-	height: 55vh;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
  
+/*>>>>>>>>>>>>END*/
 
-.navbar .megamenu{ padding: 1rem; }
+/*Footer*/
+
+.sm{
+  width:45px;
+  height:45px;
+  border-radius:90px;
+  margin:5px;
+}
+
+.fab{
+  width:15px;
+  height:15px;
+}
+
+
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
 	
@@ -309,6 +368,5 @@ display: flex;
     font-size: 1.25rem;
     line-height: 1.4;
   }
-
 
 }
