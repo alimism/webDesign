@@ -215,14 +215,18 @@ position: absolute;
   color:var(--turquesa)
 }
 
+.modal-body{
+  height: 600px;
+}
+
 .modal-body input[type="text"],.modal-body input[type="email"],.modal-body input[type="password"]{
   width: 90%;
-  height:10%
+  height:8.5%
 }
 /*>>>>>>>>>>>>END*/
 
 /*Tittles for Tienda, Marcas and Experiencia*/
-
+/*Titulos para tienda*/
 .container .box-title h1 , .container .box-title h4{
   text-align: center;
   color:var(--turquesa);
@@ -251,9 +255,30 @@ position: absolute;
 
 .info li{
   display: inline-block;
-  color: var(--blanco);
   padding:8.5%;
   padding-top:4%;
+
+}
+
+/* .container-add{
+  margin-right: 10rem !important;
+  margin-left: 10rem !important;
+} */
+.things, .info li,.add{
+  color: var(--blanco);
+}
+
+.img-box{
+  width:300px;
+  height:180px;
+  border-radius:20px;
+  margin-top: -35%;
+}
+
+.tproducts li{
+  display: inline-block;
+  padding:4.5%;
+
 }
 
 /*>>>>>>>>>>>>END*/
@@ -311,7 +336,6 @@ position: absolute;
 
 .add{
   margin-top: 2%;
-  color:var(--blanco);
 }
 
 /*>>>>>>>>>>>>END*/
@@ -504,6 +528,15 @@ footer .container .row li a:hover{
   .not-disc,.price-final{
     margin-top: 0.25rem;
     font-size: 0.8rem;
+  }
+
+  .container .box-title .behind{
+    font-size: 32px;
+  }
+  
+  .container .box-title .into{
+    margin-top: -8%;
+    font-size: 20px;
   }
 
 }
