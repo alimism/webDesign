@@ -14,9 +14,10 @@
   <link rel="stylesheet" href="../img/5 - Icon font/dist/css/style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-  <!--Owl Carousel-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Light Slider-->
   <link type="text/css" rel="stylesheet" href="../css/lightslider.css" />
   <!-- Bootstrap -->
   <link href="../css/bootstrap.css" rel="stylesheet" />
@@ -48,7 +49,7 @@
               <div class="row g-3">
                 <div class="col-lg-3 col-6">
                   <div class="col-megamenu">
-                    <h6 class="title">Computadoras</h6>
+                    <h6 class="title fw-bold">Computadoras</h6>
                     <ul class="list-unstyled">
                       <li><a href="#">Hogar y Oficina</a></li>
                       <li><a href="#">Gamer</a></li>
@@ -61,7 +62,7 @@
                 <!-- end col-3 -->
                 <div class="col-lg-3 col-6">
                   <div class="col-megamenu">
-                    <h6 class="title">Laptops</h6>
+                    <h6 class="title fw-bold">Laptops</h6>
                     <ul class="list-unstyled">
                       <li><a href="#">Hogar y Oficina</a></li>
                       <li><a href="#">Gamer</a></li>
@@ -73,7 +74,7 @@
                 <!-- end col-3 -->
                 <div class="col-lg-3 col-6">
                   <div class="col-megamenu">
-                    <h6 class="title">Periféricos y Accesorios</h6>
+                    <h6 class="title fw-bold">Periféricos y Accesorios</h6>
                     <ul class="list-unstyled">
                       <li><a href="#">Monitores</a></li>
                       <li><a href="#">Audífonos y Parlantes</a></li>
@@ -99,12 +100,50 @@
             <input type="text" placeholder="Estoy buscando..." />
             <div id="search"><i class="iconly-Search icbo"></i></div>
           </div>
-          <div id="user" class="ico"><i class="iconly-Profile icbo"></i></div>
-          <div id="fav" class="ico">
-            <i class="iconly-Heart icbo"></i>
+          <div id="user" class="ico">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content modal-dialog-scrollable">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Registrarse</h4>
+                    <input class="my-2 rounded-3 border-none" type="text" placeholder="Nombre(s)"><br>
+                    <input class="my-2 rounded-3 border-none" type="text" placeholder="Apellidos(s)"><br>
+                    <input class="my-2 rounded-3 border-none" type="text" placeholder="Documento de Identidad"><br>
+                    <input class="my-2 rounded-3 border-none" type="text" placeholder="Celular"><br>
+                    <input class="my-2 rounded-3 border-none" type="email" placeholder="Correo"><br>
+                    <input class="my-2 rounded-3 border-none" type="password" placeholder="Contraseña"><br>
+                    <input class="my-2 rounded-3 border-none" type="password" placeholder="Confirmar Contraseña"><br>
+                    <div class="check text-start ms-4 my-2">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><label class="ms-2"> Acepto Términos y Condiciones</label><br>
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><label class="ms-2"> Suscribirse a Newsletter</label>
+                    </div>
+                  </div><br>
+                  <div class="modal-footer col-auto">
+                    <button type="button" class="btn btn-primary-dark big-btn-2">Registrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-form p-3">
+              <h4>Iniciar Sesión</h4>
+              <input class="my-2" type="text" placeholder="example@example.com">
+              <input clas="my-2" type="password" placeholder="*******"><br>
+              <a class="lose" href="#">¿Olvidaste tu contraseña?</a><br>
+              <button class="btn btn-lg btn-primary-dark big-btn mt-3 mb-2">Ingresar</button>
+              <p>¿Eres nuevo?<a id="modal-new" data-bs-toggle="modal" data-bs-target="#exampleModal"> Registrate
+                  aquí</a></p>
+            </div>
+            <div id="me"><i class="iconly-Profile icbo"></i></div>
+          </div>
+          <div id="fav" class="ico love">
+            <div id="heart"><i class="iconly-Heart icbo"></i></div>
           </div>
           <div id="cart" class="ico">
-            <i class="iconly-Buy icbo"></i>
+            <div id="shop"><i class="iconly-Buy icbo"></i></div>
           </div>
         </div>
       </div>
@@ -130,20 +169,20 @@
         <div class="container">
           <div class="carousel-caption text-start">
             <div class="col-10 align-center">
-                <div id="stars-cr">
-                  <i class="iconly-Star icbo"></i>
-                  <i class="iconly-Star icbo"></i>
-                  <i class="iconly-Star icbo"></i>
-                  <i class="iconly-Star icbo"></i>
-                  <i class="iconly-Star icbo"></i>
-                </div>
-                <h1>Laptop Asus Zenbook 14 - Gris</h1>
-                <h6>i5 11TH GEN | 14" FHD | 8GB RAM | SSD 512 GB | NUMBER PAD 2.0</h6>
-                <p>Su procesador Intel Core i5-1135G7 y 8GB de RAM te permitirán operar varias aplicaciones sin
-                  complicaciones.</p>
-                <h5 class="not-disc">S/. 6 899</h5>
-                <h5 class="price-final">S/. 1 380</h5>
-                <p><a class="btn btn-lg btn-primary add" href="#">Agregar</a></p>
+              <div id="stars-cr">
+                <i class="iconly-Star icbo"></i>
+                <i class="iconly-Star icbo"></i>
+                <i class="iconly-Star icbo"></i>
+                <i class="iconly-Star icbo"></i>
+                <i class="iconly-Star icbo"></i>
+              </div>
+              <h1>Laptop Asus Zenbook 14 - Gris</h1>
+              <h6>i5 11TH GEN | 14" FHD | 8GB RAM | SSD 512 GB | NUMBER PAD 2.0</h6>
+              <p>Su procesador Intel Core i5-1135G7 y 8GB de RAM te permitirán operar varias aplicaciones sin
+                complicaciones.</p>
+              <h5 class="not-disc">S/. 6 899</h5>
+              <h5 class="price-final">S/. 1 380</h5>
+              <p><a class="add btn btn-lg btn-primary" href="#">Agregar</a></p>
             </div>
           </div>
         </div>
@@ -732,11 +771,11 @@
         </li>
       </ul>
     </section>
-    <br />
+    <br>
   </div>
-  <br />
-  <hr />
-  <br />
+  <br>
+  <hr>
+  <br>
   <div id="marcas" class="container">
     <div class="box-title">
       <h1 id="b2" class="behind">MARCAS</h1>
@@ -929,7 +968,7 @@
           <div class="input-group">
             <input type="text" class="form-control email">
             <span class="input-group-btn">
-              <button class="btn btn-primary joinus" type="submit">
+              <button class="btn btn-primary-dark joinus" type="submit">
                 Unirse
               </button>
             </span>
@@ -969,6 +1008,8 @@
   <script type="text/javascript" src="../js/items.js"></script>
 
   <script src="../js/search.js"></script>
+  <script src="../js/user.js"></script>
+  <script src="../js/popupModal.js"></script>
   <script src="../js/navdrop.js" type="text/javascript"></script>
 
 

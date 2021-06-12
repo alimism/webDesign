@@ -4,8 +4,8 @@
 /*Paleta de Colores*/
 :root{
 
-    --negro1:  #111111;
-    --negro2: #222222;
+    --negro1:  #010400;
+    --negro2: #30332e;
     --negro3: #333333;
     --turquesa: #19b5ff;
     --turquesargba: rgba(25, 181, 255, 0.508);
@@ -43,7 +43,10 @@ a{
 }
 
 /*Navbar start*/
+.btn-primary,.btn-primary-dark,.btn-secondary{
+  border-radius: 32px;
 
+}
 .navbar{
   width: 90%;
   margin:auto;
@@ -59,7 +62,7 @@ a{
 }
 
 .ico{
-  margin-right:10px;
+  margin-right:20px;
   display: inline-block;
 }
 
@@ -78,31 +81,67 @@ a{
   transition: all 0.3s ease;
 }
 
-.searchbar #search{
-  position: absolute;
-  top: 0;
-  right:0;
-  width: 35px;
+#user #me,.searchbar #search,#fav #heart,#cart #shop{
   height: 100%;
   background: none;
   border-radius: 40px;
-  color: #fff;
   transition: all 0.5s 0.3s ease;
+}
+
+.searchbar #search{
+  position: absolute;
+  width: 35px;
+  top:0px;
+  right:0px;
 
 }
 
-.searchbar #search i{
+#user #me{
+  position: absolute;
+  width: 35px;
+  top:0px;
+  right:60px;
+}
+
+#fav #heart{
+  position: absolute;
+  width: 35px;
+  top:0px;
+  right:30px;
+}
+
+#cart #shop{
+  position: absolute;
+  width: 35px;
+  top:0px;
+  right:0px;
+}
+
+.searchbar #search i,#user #me i,#fav #heart i,#cart #shop i{
   position: absolute;
   top: 45%;
-  left: 55%;
   transform: translate(-50%,-50%);
   cursor: pointer;
 }
 
-.searchbar #search.active{
+.searchbar #search i{
+  left: 55%;
+}
+
+#user #me i{
+  left: 50%;
+}
+
+
+.searchbar #search.active,#user #me.active{
   background: var(--turquesa);
   transition: all 0.3s ease;
 }
+
+#fav #heart.active,#cart #shop.active{
+  transition: all 0.3s ease;
+}
+
 
 .searchbar input[type="text"].active{
   width: 200px;
@@ -120,8 +159,66 @@ a{
 .icons{
 right: 5%;
 position: absolute;
+
 }
 
+#user .dropdown-form{
+  position: absolute;
+  background-color: var(--blanco);
+  width:0;
+  height:0;
+  right:-60px;
+  top:40px;
+  border-radius:20px;
+  z-index: 5;
+  opacity: 0;
+  
+}
+
+#user .dropdown-form.active{
+  position: absolute;
+  background-color: var(--blanco);
+  width:280px;
+  height:280px;
+  right:-60px;
+  top:40px;
+  border-radius:20px;
+  z-index: 5;
+  opacity:1;  
+}
+
+.big-btn{
+  width: 50%;
+}
+
+.big-btn-2{
+  width: 30%;
+}
+
+.big-btn:hover{
+  color: var(--negro1);
+}
+
+.dropdown-form .lose{
+  opacity: 0.5;
+}
+
+.dropdown-form .lose:hover{
+  opacity: 1;
+}
+
+#modal-new{
+  cursor: pointer;
+}
+
+#modal-new:hover{
+  color:var(--turquesa)
+}
+
+.modal-body input[type="text"],.modal-body input[type="email"],.modal-body input[type="password"]{
+  width: 90%;
+  height:10%
+}
 /*>>>>>>>>>>>>END*/
 
 /*Tittles for Tienda, Marcas and Experiencia*/
@@ -213,11 +310,9 @@ position: absolute;
 }
 
 .add{
-  border-radius: 900px;
   margin-top: 2%;
+  color:var(--blanco);
 }
-
-
 
 /*>>>>>>>>>>>>END*/
 
@@ -295,14 +390,14 @@ display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: #FFFFFF;
-	color:#252525;
+	color:var(--negro2);
 	font-weight: 700;
 	border-radius: 20px;
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
 }
 .buy-btn:hover{
 	color:var(--blanco);
-	background-color: var(--negro3);
+	background-color: var(--negro2);
 	transition: all ease 0.3s;
 }
 
@@ -343,13 +438,20 @@ footer .container{
   border-radius: 50px 50px 0 0 ;
 }
 
-footer {
+.joinus{
+  border-radius: 0 5px 5px 0;
 }
 
 footer .container .row li a{
   color:var(--blanco);
 
 }
+
+footer .container .row li a:hover{
+  color:var(--turquesa);
+
+}
+
 
 
 
@@ -405,3 +507,4 @@ footer .container .row li a{
   }
 
 }
+
