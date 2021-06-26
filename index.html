@@ -31,7 +31,7 @@
 <body>
   <img id="fondo" src="../img/Recurso 1.png" />
   <!--NAVIGATION-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-glass">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="../img/Plogos.png" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
@@ -41,10 +41,10 @@
       <div class="collapse navbar-collapse" id="main_nav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio</a>
+            <a class="nav-link mx-3" href="#">Inicio</a>
           </li>
           <li class="nav-item dropdown has-megamenu">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tienda</a>
+            <a class="nav-link dropdown-toggle mx-3" href="#" data-bs-toggle="dropdown">Tienda</a>
             <div class="dropdown-menu megamenu" role="menu">
               <div class="row g-3">
                 <div class="col-lg-3 col-6">
@@ -62,7 +62,7 @@
                 <!-- end col-3 -->
                 <div class="col-lg-3 col-6">
                   <div class="col-megamenu">
-                    <h6 class="title fw-bold">Laptops</h6>
+                    <h6 class="title fw-bold"><a id="dataCat" class="text-dark text-decoration-none" href="tiendaMenu.html">Laptops</a></h6>
                     <ul class="list-unstyled">
                       <li><a href="#">Hogar y Oficina</a></li>
                       <li><a href="#">Gamer</a></li>
@@ -85,14 +85,27 @@
                   </div>
                   <!-- col-megamenu.// -->
                 </div>
+
+                <div class="col-lg-3 col-6">
+                  <div class="col-megamenu announcement container">
+                    <a href="../productoIdeal.html">
+                      <h4>¿BÚSQUEDA PERSONALIZADA?</h4>
+                      <span>ENCUENTRA TU PRODUCTO IDEAL</span><br>
+                      <button class="into-pi">Ingresar</button>
+                    </a>
+                  </div>
+                  <!-- col-megamenu.// -->
+                </div>
+
               </div>
               <!-- end row -->
             </div>
             <!-- dropdown-mega-menu.// -->
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="#">Nosotros</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="#">Contacto</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="#">FAQ</a></li>
+          <!-- <li class="nav-item mx-2 "><a class="nav-link" href="#">Producto Ideal</a> -->
         </ul>
 
         <div class="icons">
@@ -259,34 +272,26 @@
       <h1 id="b1" class="behind">TIENDA</h1>
       <h4 id="i1" class="into">¿Qué estas buscando?</h4>
     </div>
-    <!-- <div class="d-flex flex-row justify-content-center">
-      <div id="pc" class="container-add">
-        <img src="../img/pc.png">
-        <div class="img-box bg-primary"></div>
-      </div>
-      <div id="laptop" class="container-add">
-        <img src="../img/laptop.png">
-        <div class="img-box bg-primary"></div>
-      </div>
-      <div id="more" class="container-add">
-        <img src="../img/more.png">
-        <div class="img-box bg-primary"></div>
-      </div>
-    </div> -->
 
     <div class="bx-add">
       <ul class="list-unstyled tproducts">
         <li>
-          <div class="things"><img src="../img/pc.png" alt="transferencia"><h5>Computadoras</h5></div>
-          <div class="img-box bg-primary"></div>
+          <div class="things"><img src="../img/pc.png" alt="transferencia">
+            <h5>Computadoras</h5>
+          </div>
+          <div class="img-box bg-glass"></div>
         </li>
         <li>
-          <div class="things"><img src="../img/laptop.png" alt="transferencia"><h5>Laptops</h5></div>
-          <div class="img-box bg-primary"></div>
+          <div class="things"><img src="../img/laptop.png" alt="transferencia">
+            <h5>Laptops</h5>
+          </div>
+          <div class="img-box bg-glass"></div>
         </li>
         <li>
-          <div class="things"><img src="../img/more.png" alt="transferencia"><h5>Periféricos y Accesorios</h5></div>
-          <div class="img-box bg-primary"></div>
+          <div class="things"><img src="../img/more.png" alt="transferencia">
+            <h5>Periféricos y Accesorios</h5>
+          </div>
+          <div class="img-box bg-glass"></div>
         </li>
       </ul>
     </div>
@@ -396,8 +401,14 @@
         </li>
       </ul>
     </section>
-
-    <h2 class="tt-type">Nuevos Ingresos</h2>
+    <div class="row align-items-end">
+      <div class="col-10">
+        <h2 class="tt-type">Nuevos Ingresos</h2>
+      </div>
+      <div class="col text-white text-decoration-none">
+        <h5><a>ver todo ></a></h5>
+      </div>
+    </div>
     <section class="slider">
       <ul id="autoWidth2" class="cs-hidden">
         <!--1------------------------------------>
@@ -602,8 +613,14 @@
         </li>
       </ul>
     </section>
-    <h2 class="tt-type">Los más Vendidos</h2>
-    <section class="slider">
+    <div class="row align-items-end">
+      <div class="col-10">
+        <h2 class="tt-type">Los más Vendidos</h2>
+      </div>
+      <div class="col text-white text-decoration-none">
+        <h5><a>ver todo ></a></h5>
+      </div>
+    </div>    <section class="slider">
       <ul id="autoWidth3" class="cs-hidden">
         <!--1------------------------------------>
         <li class="item-a">
@@ -825,7 +842,7 @@
           <div class="box bg-glass">
             <!--img-box---------->
             <div class="slide-img">
-              <img alt="8" src="../img/marcas/1.png" />
+              <img alt="1" src="../img/marcas/1.png" />
             </div>
           </div>
         </li>
@@ -834,7 +851,7 @@
           <div class="box bg-glass">
             <!--img-box---------->
             <div class="slide-img">
-              <img alt="8" src="../img/marcas/2.png" />
+              <img alt="2" src="../img/marcas/2.png" />
             </div>
           </div>
         </li>
@@ -843,7 +860,7 @@
           <div class="box bg-glass">
             <!--img-box---------->
             <div class="slide-img">
-              <img alt="8" src="../img/marcas/3.png" />
+              <img alt="3" src="../img/marcas/3.png" />
             </div>
           </div>
         </li>
@@ -852,7 +869,7 @@
           <div class="box bg-glass">
             <!--img-box---------->
             <div class="slide-img">
-              <img alt="8" src="../img/marcas/4.png" />
+              <img alt="4" src="../img/marcas/4.png" />
             </div>
           </div>
         </li>
@@ -862,7 +879,7 @@
           <div class="box bg-glass">
             <!--img-box---------->
             <div class="slide-img">
-              <img alt="8" src="../img/marcas/5.png" />
+              <img alt="5" src="../img/marcas/5.png" />
             </div>
           </div>
         </li>
@@ -872,7 +889,7 @@
           <div class="box bg-glass">
             <!--img-box---------->
             <div class="slide-img">
-              <img alt="8" src="../img/marcas/6.png" />
+              <img alt="6" src="../img/marcas/6.png" />
             </div>
           </div>
         </li>
@@ -881,7 +898,7 @@
           <div class="box bg-glass">
             <!--img-box---------->
             <div class="slide-img">
-              <img alt="8" src="../img/marcas/7.png" />
+              <img alt="7" src="../img/marcas/7.png" />
             </div>
           </div>
         </li>
@@ -903,7 +920,7 @@
           <div class="box bg-glass">
             <!--img-box---------->
             <div class="slide-img">
-              <img alt="8" src="../img/marcas/9.png" />
+              <img alt="9" src="../img/marcas/9.png" />
             </div>
           </div>
         </li>
@@ -914,7 +931,7 @@
           <div class="box bg-glass">
             <!--img-box---------->
             <div class="slide-img">
-              <img alt="8" src="../img/marcas/10.png" />
+              <img alt="10" src="../img/marcas/10.png" />
             </div>
           </div>
         </li>
@@ -925,7 +942,7 @@
           <div class="box bg-glass">
             <!--img-box---------->
             <div class="slide-img">
-              <img alt="8" src="../img/marcas/11.png" />
+              <img alt="11" src="../img/marcas/11.png" />
             </div>
           </div>
         </li>
@@ -936,7 +953,7 @@
           <div class="box bg-glass">
             <!--img-box---------->
             <div class="slide-img">
-              <img alt="8" src="../img/marcas/12.png" />
+              <img alt="12" src="../img/marcas/12.png" />
             </div>
           </div>
         </li>
@@ -1027,7 +1044,7 @@
 
       <div class="row mt-5">
         <div class="col copyright">
-          <p class=""><small class="text-white-50">© 2021. All Rights Reserved.</small></p>
+          <p class=""><small class="text-white-50">© 2021. OfficeTec. All Rights Reserved.</small></p>
         </div>
       </div>
 

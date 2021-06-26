@@ -2936,9 +2936,7 @@ textarea.form-control-lg {
 
 }
 
-.btn-primary{
-  width:20%;
-}
+
 
 .btn-primary:hover {
   color: #fff;
@@ -3183,8 +3181,8 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  color: #0d6efd;
-  border-color: #0d6efd;
+  color: transparent;
+  border-color: var(--bs-primary);
 }
 .btn-outline-primary:hover {
   color: #fff;
@@ -7349,7 +7347,7 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
-  color: #0d6efd !important;
+  color: var(--bs-primary) !important;
 }
 
 .text-secondary {

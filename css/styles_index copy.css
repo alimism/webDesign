@@ -55,7 +55,42 @@ a{
   padding-top: 50px;
 }
 
-.navbar .megamenu{ padding: 1rem; }
+
+
+.navbar .megamenu{ padding: 1rem; border-radius: 25px;}
+
+.announcement{
+  background-color: var(--turquesa);
+  border-radius:10px;
+  width:auto;
+  height:145px;
+  padding:15px;
+  text-align: center;
+}
+
+.announcement h4{
+  font-weight:800;
+  text-shadow: 3px 3px 0px rgb(0 0 0 / 40%);
+  margin: 0;
+}
+
+.announcement h4, .announcement span,.announcement button{
+  color: var(--blanco);
+}
+
+.announcement span:hover{
+  color:var(--blanco);
+}
+
+.announcement button{
+  background-color: transparent;
+  border-radius: 10px;
+  border:1px solid var(--blanco);
+  font-weight: bold;
+  padding:5px;
+  width:100px;
+}
+
 
 .icbo{
   color:var(--blanco);
@@ -255,15 +290,11 @@ position: absolute;
 
 .info li{
   display: inline-block;
-  padding:8.5%;
+  padding:8%;
   padding-top:4%;
 
 }
 
-/* .container-add{
-  margin-right: 10rem !important;
-  margin-left: 10rem !important;
-} */
 .things, .info li,.add{
   color: var(--blanco);
 }
@@ -272,7 +303,7 @@ position: absolute;
   width:300px;
   height:180px;
   border-radius:20px;
-  margin-top: -35%;
+  margin-top: -40%;
 }
 
 .tproducts li{
@@ -280,6 +311,11 @@ position: absolute;
   padding:4.5%;
 
 }
+
+.tproducts li h5{
+  margin-top:25px;
+}
+
 
 /*>>>>>>>>>>>>END*/
 
@@ -320,7 +356,6 @@ position: absolute;
   text-align: justify;
 }
 
-
 #nxtcr{
   margin-top:-3.5%;
   margin-bottom:3%;
@@ -328,14 +363,19 @@ position: absolute;
 
 .not-disc{
   text-decoration: line-through;
+  color: var(--turquesa);
+
 }
 
 .price-final{
   font-weight: bold;
+  color: var(--turquesa);
+
 }
 
 .add{
   margin-top: 2%;
+  width:auto;
 }
 
 /*>>>>>>>>>>>>END*/
@@ -393,6 +433,11 @@ display: flex;
 	font-weight: 600;
 	font-size: 1.1rem;
 }
+
+.price:hover{
+  color: var(--blanco);
+}
+
 .overlay{
 	position: absolute;
 	left: 50%;
@@ -413,7 +458,7 @@ display: flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #FFFFFF;
+	background-color: var(--blanco);
 	color:var(--negro2);
 	font-weight: 700;
 	border-radius: 20px;
@@ -477,7 +522,9 @@ footer .container .row li a:hover{
 }
 
 
-
+#pagination{
+  border-color: var(--turquesa);
+}
 
 
 /* ============ desktop view ============ */
@@ -509,7 +556,7 @@ footer .container .row li a:hover{
   }
 
   .carousel-caption h1 {
-    font-size: 0.9rem;
+    font-size: 2rem;
   }
 
   .carousel-caption h6 {
@@ -538,6 +585,7 @@ footer .container .row li a:hover{
     margin-top: -8%;
     font-size: 20px;
   }
+
 
 }
 
