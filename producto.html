@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+    <!--Estilos de html-->
+    <link rel="stylesheet" type="text/css" href="../css/styles_index copy.css" />
+
+    <!--Estilos de Iconos y Fonts-->
+    <link rel="stylesheet" href="../img/5 - Icon font/dist/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Light Slider-->
+    <link type="text/css" rel="stylesheet" href="../css/lightslider.css" />
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../js/lightslider.js" type="text/javascript"></script>
+    <title>ASUS ZENBOOK UX435EG</title>
+</head>
+
+<body>
+    <img id="fondo" src="../img/Recurso 1.png" />
+  <!--NAVIGATION-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="../img/Plogos.png" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main_nav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link mx-3" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown has-megamenu">
+            <a class="nav-link dropdown-toggle mx-3" href="#" data-bs-toggle="dropdown">Tienda</a>
+            <div class="dropdown-menu megamenu" role="menu">
+              <div class="row g-3">
+                <div class="col-lg-3 col-6">
+                  <div class="col-megamenu">
+                    <h6 class="title fw-bold">Computadoras</h6>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Hogar y Oficina</a></li>
+                      <li><a href="#">Gamer</a></li>
+                      <li><a href="#">Edición</a></li>
+                      <li><a href="#">Ingeniería</a></li>
+                    </ul>
+                  </div>
+                  <!-- col-megamenu.// -->
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-6">
+                  <div class="col-megamenu">
+                    <h6 class="title fw-bold"><a id="dataCat" class="text-dark text-decoration-none"
+                        href="tiendaMenu.html">Laptops</a></h6>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Hogar y Oficina</a></li>
+                      <li><a href="#">Gamer</a></li>
+                      <li><a href="#">Profesional</a></li>
+                    </ul>
+                  </div>
+                  <!-- col-megamenu.// -->
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-6">
+                  <div class="col-megamenu">
+                    <h6 class="title fw-bold">Periféricos y Accesorios</h6>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Monitores</a></li>
+                      <li><a href="#">Audífonos y Parlantes</a></li>
+                      <li><a href="#">Mouse</a></li>
+                      <li><a href="#">Teclados</a></li>
+                      <li><a href="#">Accesorios</a></li>
+                    </ul>
+                  </div>
+                  <!-- col-megamenu.// -->
+                </div>
+
+                <div class="col-lg-3 col-6">
+                  <div class="col-megamenu announcement container">
+                    <a href="../productoIdeal.html">
+                      <h4>¿BÚSQUEDA PERSONALIZADA?</h4>
+                      <span>ENCUENTRA TU PRODUCTO IDEAL</span><br>
+                      <button><a class="text-decoration-none text-white" href="productoIdeal.html">Ingresar</a></button>
+                    </a>
+                  </div>
+                  <!-- col-megamenu.// -->
+                </div>
+
+              </div>
+              <!-- end row -->
+            </div>
+            <!-- dropdown-mega-menu.// -->
+          </li>
+          <li class="nav-item mx-3"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <!-- <li class="nav-item mx-2 "><a class="nav-link" href="#">Producto Ideal</a> -->
+        </ul>
+
+        <div class="icons">
+          <div class="searchbar ico">
+            <input type="text" placeholder="Estoy buscando..." />
+            <div id="search"><i class="iconly-Search icbo"></i></div>
+          </div>
+          <div id="user" class="ico">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Registrarse</h4>
+                    <input class="my-2 rounded-3 border-none" type="text" placeholder="Nombre(s)"><br>
+                    <input class="my-2 rounded-3 border-none" type="text" placeholder="Apellidos(s)"><br>
+                    <input class="my-2 rounded-3 border-none" type="text" placeholder="Documento de Identidad"><br>
+                    <input class="my-2 rounded-3 border-none" type="text" placeholder="Celular"><br>
+                    <input class="my-2 rounded-3 border-none" type="email" placeholder="Correo"><br>
+                    <input class="my-2 rounded-3 border-none" type="password" placeholder="Contraseña"><br>
+                    <input class="my-2 rounded-3 border-none" type="password" placeholder="Confirmar Contraseña"><br>
+                    <div class="check text-start ms-4 my-2">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><label
+                        class="ms-2"> Acepto Términos y Condiciones</label><br>
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><label
+                        class="ms-2"> Suscribirse a Newsletter</label>
+                    </div>
+                  </div><br>
+                  <div class="modal-footer col-auto justify-content-center">
+                    <button type="button" class="btn btn-primary-dark big-btn-2">Registrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-form p-3">
+              <h4>Iniciar Sesión</h4>
+              <input class="my-2" type="text" placeholder="example@example.com">
+              <input clas="my-2" type="password" placeholder="*******"><br>
+              <a class="lose" href="#">¿Olvidaste tu contraseña?</a><br>
+              <button class="btn btn-lg btn-primary-dark big-btn mt-3 mb-2">Ingresar</button>
+              <p>¿Eres nuevo?<a id="modal-new" data-bs-toggle="modal" data-bs-target="#exampleModal"> Registrate
+                  aquí</a></p>
+            </div>
+            <div id="me"><i class="iconly-Profile icbo"></i></div>
+          </div>
+          <div id="fav" class="ico love">
+            <div id="heart"><i class="iconly-Heart icbo"></i></div>
+          </div>
+          <div id="cart" class="ico">
+            <a href="../carrito.html">
+              <div id="shop"><i class="iconly-Buy icbo"></i></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- navbar-collapse.// -->
+    </div>
+    <!-- container-fluid.// -->
+  </nav>
+  <!--END NAVBAR-->
+  
+    <div class="container">
+        <!-- card left -->
+        <div class="product-imgs row">
+
+            <div class="img-select col-2">
+                <div class="img-item">
+                    <a href="#" data-id="1">
+                        <img class="items-all bg-glass" src="../img/product/asusZPrincipal.png" alt="principal">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#" data-id="2">
+                        <img class="items-all bg-glass" src="../img/product/asusZSec1.png" alt="sec1">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#" data-id="3">
+                        <img class="items-all bg-glass" src="../img/product/asusZSec2.png" alt="sec2">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#" data-id="4">
+                        <img class="items-all bg-glass" src="../img/product/asusZSec3.png" alt="sec3">
+                    </a>
+                </div>
+            </div>
+
+            <div class="img-display col-5">
+                <div class="img-showcase">
+                    <img class="bg-glass" src="../img/product/asusZPrincipal.png" alt="principal">
+                    <img class="bg-glass" src="../img/product/asusZSec1.png" alt="sec1">
+                    <img class="bg-glass" src="../img/product/asusZSec2.png" alt="sec2">
+                    <img class="bg-glass" src="../img/product/asusZSec3.png" alt="sec3">
+                </div>
+            </div>
+
+            <div class="col text-start text-white ms-5">
+                <h3 class="fw-bold">ASUS LAPTOP ZENBOOK 14 UX435EG 14" CORE I7 512GB 16GB 2GB</h3>
+                <div id="stars-cr">
+                    <i class="iconly-Star icbo"></i>
+                    <i class="iconly-Star icbo"></i>
+                    <i class="iconly-Star icbo"></i>
+                    <i class="iconly-Star icbo"></i>
+                    <i class="iconly-Star icbo not"></i>
+                </div>
+                <div class="caption mt-3">
+                    <p>Laptop UX435EG-A5060T de Asus. Procesador Intel® Core i7-1165G7 de undécima generación.Tarjeta
+                        gráfica NVIDIA® GeForce® MX450 de 2GB. Memoria RAM de 16GB.</p>
+                </div>
+                <h2 class="text-primary mb-3">S/.5,499</h2>
+                <div class="addHeart row align-items-center">
+                    <div class="col-5">
+                        <p><a class="btn btn-lg btn-primary add px-4" href="#">Agregar al Carrito</a></p>
+                    </div>
+                    <div class="col-2 p-0">
+                        <i class="iconly-Heart icbo iconly-Heart-P"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div class="row">
+            <div class="col my-5">
+                <ul class="nav nav-tabs nav-fill">
+                    <li class="nav-item"><a class="nav-link active text-white" data-bs-toggle="tab"
+                            href="#description">Descripción</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" data-bs-toggle="tab"
+                            href="#specs">Especificaciones</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" data-bs-toggle="tab"
+                            href="#comment">Comentarios</a></li>
+                </ul>
+                <div class="tab-content text-white">
+                    <div class="tab-pane rounded-bottom active p-3 bg-glass" id="description">
+                        <img src="../img/product/info1.jpg">
+                        <h3 class="my-3">Belleza clásica, portabilidad sin límites</h3>
+                        <p>La nueva y hermosa ZenBook 14 es más portátil que nunca. Es más delgada, liviana e
+                            increíblemente compacta, incluye HDMI, Thunderbolt ™ 3 USB-C®, USB tipo A y lector de
+                            tarjetas MicroSD para una versatilidad sin igual. Diseñada para ofrecer un rendimiento
+                            potente, la ZenBook 14 es la elección perfecta para un modo de vida en constante movimiento.
+                        </p>
+
+
+
+                    </div>
+                    <div class="tab-pane rounded-bottom p-3 bg-glass" id="specs">
+                        <table class="table text-start text-white">
+                            <tbody>
+                                <tr>
+                                    <td>Marca</td>
+                                    <td>ASUS</td>
+                                </tr>
+                                <tr>
+                                    <td>Modelo</td>
+                                    <td>UX435EG</td>
+                                </tr>
+                                <tr>
+                                    <td>Procesador</td>
+                                    <td>Intel Core I5</td>
+                                </tr>
+                                <tr>
+                                    <td>RAM</td>
+                                    <td>8GB DDR4</td>
+                                </tr>
+                                <tr>
+                                    <td>Disco Duro Sólido</td>
+                                    <td>SSD 512GB</td>
+                                </tr>
+                                <tr>
+                                    <td>Disco Duro Rígido</td>
+                                    <td>No tiene</td>
+                                </tr>
+                                <tr>
+                                    <td>Peso(kg)</td>
+                                    <td>1.17</td>
+                                </tr>
+                                <tr>
+                                    <td>Tarjeta Gráfica</td>
+                                    <td>Intel Iris X Graphics</td>
+                                </tr>
+                                <tr>
+                                    <td>Caché</td>
+                                    <td>8M</td>
+                                </tr>
+                                <tr>
+                                    <td>Pantalla</td>
+                                    <td>1920x1080 - LED Full HD</td>
+                                </tr>
+                                <tr>
+                                    <td>Táctil</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Wifi y Bluetooth</td>
+                                    <td>Ambos</td>
+                                </tr>
+                                <tr>
+                                    <td>Puertos USB</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Puertos HDMI</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Bateria</td>
+                                    <td>Litio-ion 4 celdas</td>
+                                </tr>
+                                <tr>
+                                    <td>Dimensiones(An.xAl.xProf.)</td>
+                                    <td>31.9 cm x 1.39 cm x 20.80 cm</td>
+                                </tr>
+                                <tr>
+                                    <td>Color</td>
+                                    <td>Gris Azulado</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane rounded-bottom p-3 bg-glass" id="comment">
+
+                        <div class="row text-start mt-2 mx-2">
+                            <div class="col border p-3">
+                                <h3>REVIEWS</h3>
+                                <div id="stars-cr">
+                                    <i class="iconly-Star icbo"></i>
+                                    <i class="iconly-Star icbo"></i>
+                                    <i class="iconly-Star icbo"></i>
+                                    <i class="iconly-Star icbo"></i>
+                                    <i class="iconly-Star icbo not"></i>
+                                </div>
+                                <h5 class="fst-italic">Basada en 2 reviews</h5>
+
+                            </div>
+                        </div>
+                        <div class="row text-start mx-2">
+                            <div class="col border p-3">
+                                <h3>BUENA RESOLUCIÓN</h3>
+                                <div id="stars-cr">
+                                    <i class="iconly-Star icbo"></i>
+                                    <i class="iconly-Star icbo"></i>
+                                    <i class="iconly-Star icbo"></i>
+                                    <i class="iconly-Star icbo"></i>
+                                    <i class="iconly-Star icbo not"></i>
+                                </div>
+                                <h5>Pantalla orientada a trabajos de diseño principalmente, no he detectado
+                                    bleending en las esquinas como en otras marcas/modelos, por lo que la
+                                    construcción y ensamblado son de buena calidad</h5>
+                            </div>
+                        </div>
+                        <div class="row text-start mx-2 mb-2">
+                            <div class="col border p-3">
+                                <h3>¡MUY LIGERA!</h3>
+                                <div id="stars-cr">
+                                    <i class="iconly-Star icbo"></i>
+                                    <i class="iconly-Star icbo"></i>
+                                    <i class="iconly-Star icbo"></i>
+                                    <i class="iconly-Star icbo"></i>
+                                    <i class="iconly-Star icbo not"></i>
+                                </div>
+                                <h5>Es tan ligera que el termino portabilidad recobra sentido. Además de que el panel táctil sirve como segundo pantalla y me permite usarlo como tableta gráfica.</h5>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- card right -->
+
+    <footer>
+        <div class="container bg-glass text-white">
+            <div class="row text-start">
+                <div class="col-lg-5 col-xs-12 logo">
+                    <img src="../img/PLogos.png">
+                </div>
+                <div class="col-lg-2 col-xs-12 garanty">
+                    <h6 class="mt-lg-0 mt-sm-3 fw-bold">Garantías</h6>
+                    <ul class="m-0 p-0 list-unstyled">
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Métodos de Pago</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-xs-12 more-info">
+                    <h6 class="mt-lg-0 mt-sm-4 fw-bold">Más Información</h6>
+                    <ul class="m-0 p-0 list-unstyled">
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-xs-12 suscribe">
+                    <h6 class="mt-lg-0 mt-sm-4 fw-bold">Entérate antes</h6>
+                    <p>Obten descuentos exclusivos</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control email">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary-dark joinus" type="submit">
+                                Unirse
+                            </button>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col social-media">
+                    <ul class="list-unstyled d-flex justify-content-sm-end">
+                        <p class="px-4">Siguenos:</p>
+                        <li class="px-4"><a
+                                href="https://www.facebook.com/Grupo-de-Estudio-Scorpion-109415527418907/"><i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li class="px-4"><a href="https://www.instagram.com/webdevofficial/"><i
+                                    class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="px-4"><a href="https://github.com/alimiSM/webDesign"><i
+                                    class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col copyright">
+                    <p class=""><small class="text-white-50">© 2021. OfficeTec. All Rights Reserved.</small></p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/items.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/user.js"></script>
+    <script src="../js/navdrop.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>

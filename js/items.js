@@ -160,6 +160,7 @@
                 $('#autoWidth').removeClass('cS-hidden');
             } 
         });
+
         
       });
 

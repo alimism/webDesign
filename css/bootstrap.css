@@ -2952,21 +2952,21 @@ textarea.form-control-lg {
 
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #0b5ed7;
+  background-color: var(--bs-primary);
   border-color: #0a58ca;
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(25, 181, 255, 0.508);;
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0a58ca;
+  background-color: var(--bs-primary);
   border-color: #0a53be;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(25, 181, 255, 0.508);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #0d6efd;
+  background-color: var(--bs-primary);
   border-color: #0d6efd;
 }
 
@@ -3181,13 +3181,14 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  color: transparent;
+  color: var(--bs-white);
   border-color: var(--bs-primary);
+  border-radius: ;
 }
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
 }
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
@@ -3863,7 +3864,7 @@ textarea.form-control-lg {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid transparent;
 }
 .nav-tabs .nav-link {
   margin-bottom: -1px;
@@ -3871,6 +3872,7 @@ textarea.form-control-lg {
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+  background-color: rgba(25, 181, 255, 0.508);
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
@@ -3884,7 +3886,7 @@ textarea.form-control-lg {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #fff;
+  background-color: var(--bs-primary);
   border-color: #dee2e6 #dee2e6 #fff;
 }
 .nav-tabs .dropdown-menu {
@@ -3927,6 +3929,7 @@ textarea.form-control-lg {
 }
 .tab-content > .active {
   display: block;
+
 }
 
 .navbar {
