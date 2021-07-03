@@ -77,7 +77,7 @@
             freeMove: true,
             swipeThreshold: 40,
             onSliderLoad: function() {
-                $('#autoWidth').removeClass('cS-hidden');
+                $('#autoWidth2').removeClass('cS-hidden');
             } 
         });
         
@@ -117,7 +117,7 @@
             freeMove: true,
             swipeThreshold: 40,
             onSliderLoad: function() {
-                $('#autoWidth').removeClass('cS-hidden');
+                $('#autoWidth3').removeClass('cS-hidden');
             } 
         }); 
 
@@ -157,7 +157,7 @@
             freeMove: true,
             swipeThreshold: 40,
             onSliderLoad: function() {
-                $('#autoWidth').removeClass('cS-hidden');
+                $('#autoWidth4').removeClass('cS-hidden');
             } 
         });
 

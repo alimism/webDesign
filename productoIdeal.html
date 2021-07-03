@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+    <!--Estilos de html-->
+    <link rel="stylesheet" type="text/css" href="../css/styles_index copy.css" />
+
+    <!--Estilos de Iconos y Fonts-->
+    <link rel="stylesheet" href="../img/5 - Icon font/dist/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Light Slider-->
+    <link type="text/css" rel="stylesheet" href="../css/lightslider.css" />
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../js/lightslider.js" type="text/javascript"></script>
+    <title>Producto Ideal</title>
+</head>
+
+<body>
+    <img id="fondo" src="../img/Recurso 1.png" />
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="../img/Plogos.png" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link mx-3" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle mx-3" href="tienda.html" data-bs-toggle="dropdown-menu">Tienda</a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3">
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="fw-bold">Computadoras</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Multimedia</a></li>
+                                            <li><a href="#">Gamer</a></li>
+                                            <li><a href="#">Edición</a></li>
+                                            <li><a href="#">Streaming u Otros</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- col-megamenu.// -->
+                                </div>
+                                <!-- end col-3 -->
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="fw-bold"><a id="dataCat" class="text-dark text-decoration-none"
+                                                href="tiendaMenu.html">Laptops</a></h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Multimedia</a></li>
+                                            <li><a href="#">Gamer</a></li>
+                                            <li><a href="#">Profesional</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- col-megamenu.// -->
+                                </div>
+                                <!-- end col-3 -->
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu">
+                                        <h6 class="fw-bold">Periféricos y Accesorios</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Monitores</a></li>
+                                            <li><a href="#">Audífonos y Parlantes</a></li>
+                                            <li><a href="#">Mouse</a></li>
+                                            <li><a href="#">Teclados</a></li>
+                                            <li><a href="#">Accesorios</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- col-megamenu.// -->
+                                </div>
+
+                                <div class="col-lg-3 col-6">
+                                    <div class="col-megamenu announcement container">
+                                        <a href="../productoIdeal.html">
+                                            <h4>¿BÚSQUEDA PERSONALIZADA?</h4>
+                                            <span>ENCUENTRA TU PRODUCTO IDEAL</span><br>
+                                            <button><a class="text-decoration-none text-white"
+                                                    href="productoIdeal.html">Ingresar</a></button>
+                                        </a>
+                                    </div>
+                                    <!-- col-megamenu.// -->
+                                </div>
+
+                            </div>
+                            <!-- end row -->
+                        </div>
+                        <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item mx-3"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item mx-3"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item mx-3"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <!-- <li class="nav-item mx-2 "><a class="nav-link" href="#">Producto Ideal</a> -->
+                </ul>
+
+                <div class="icons">
+                    <div class="searchbar ico">
+                        <input type="text" placeholder="Estoy buscando..." />
+                        <div id="search"><i class="iconly-Search icbo"></i></div>
+                    </div>
+                    <div id="user" class="ico">
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h4>Registrarse</h4>
+                                        <input class="my-2 rounded-3 border-none" type="text"
+                                            placeholder="Nombre(s)"><br>
+                                        <input class="my-2 rounded-3 border-none" type="text"
+                                            placeholder="Apellidos(s)"><br>
+                                        <input class="my-2 rounded-3 border-none" type="text"
+                                            placeholder="Documento de Identidad"><br>
+                                        <input class="my-2 rounded-3 border-none" type="text" placeholder="Celular"><br>
+                                        <input class="my-2 rounded-3 border-none" type="email" placeholder="Correo"><br>
+                                        <input class="my-2 rounded-3 border-none" type="password"
+                                            placeholder="Contraseña"><br>
+                                        <input class="my-2 rounded-3 border-none" type="password"
+                                            placeholder="Confirmar Contraseña"><br>
+                                        <div class="check text-start ms-4 my-2">
+                                            <input class="form-check-input" autocomplete="off" type="checkbox" value=""
+                                                id="flexCheckDefault"><label class="ms-2"> Acepto Términos y
+                                                Condiciones</label><br>
+                                            <input class="form-check-input" autocomplete="off" type="checkbox" value=""
+                                                id="flexCheckDefault"><label class="ms-2"> Suscribirse a
+                                                Newsletter</label>
+                                        </div>
+                                    </div><br>
+                                    <div class="modal-footer col-auto justify-content-center">
+                                        <button type="button" class="btn btn-primary-dark big-btn-2">Registrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-form p-3">
+                            <h4>Iniciar Sesión</h4>
+                            <input class="my-2" type="text" placeholder="example@example.com">
+                            <input clas="my-2" type="password" placeholder="*******"><br>
+                            <a class="lose" href="#">¿Olvidaste tu contraseña?</a><br>
+                            <button class="btn btn-lg btn-primary-dark big-btn mt-3 mb-2">Ingresar</button>
+                            <p>¿Eres nuevo?<a id="modal-new" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Registrate
+                                    aquí</a></p>
+                        </div>
+                        <div id="me"><i class="iconly-Profile icbo"></i></div>
+                    </div>
+                    <div id="fav" class="ico love">
+                        <div id="heart"><i class="iconly-Heart icbo"></i></div>
+                    </div>
+                    <div id="cart" class="ico">
+                        <a href="../carrito.html">
+                            <div id="shop"><i class="iconly-Buy icbo"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- navbar-collapse.// -->
+        </div>
+        <!-- container-fluid.// -->
+    </nav>
+    <!--END NAVBAR-->
+
+    <section class="container text-white text-start">
+        <h2 class="tt-type">Tu Producto Ideal</h2>
+        <div class="row mt-3 ms-2 align-items-end mb-0">
+            <div class="col"> <label class="fw-light"></label>
+            </div>
+            <div class="col text-up"> <label class="fw-light"></label>
+            </div>
+            <div class="col text-up"> <label class="fw-light"></label>
+            </div>
+            <div class="col text-up"> <label class="fw-light"></label>
+            </div>
+            <div class="col text-up"> <label class="fw-light"></label>
+            </div>
+            <div class="col text-up"> <label class="fw-light"></label>
+            </div>
+            <div class="col text-up"> <label class="fw-light"></label>
+            </div>
+        </div>
+        <div class="row mb-4 mt-0 ms-2">
+            <div class="col">
+                <h5>Producto</h5>
+                <form id="form1">
+                    <div class="inputs fw-light">
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                                value="PC">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                PC
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                value="Laptop">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Laptop
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault3"
+                                value="Periféricos">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                Periféricos
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault4"
+                                value="Accesorios">
+                            <label class="form-check-label" for="flexRadioDefault4">
+                                Accesorios
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col datos">
+                <h5>Uso</h5>
+                <form id="form2">
+                    <div class="inputs fw-light">
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault5"
+                                value="Multimedia">
+                            <label class="form-check-label" for="flexRadioDefault5">
+                                Multimedia
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault6"
+                                value="Gaming">
+                            <label class="form-check-label" for="flexRadioDefault6">
+                                Gaming
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault7"
+                                value="Edición">
+                            <label class="form-check-label" for="flexRadioDefault7">
+                                Edición
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault8"
+                                value="Streaming o Exigente">
+                            <label class="form-check-label" for="flexRadioDefault8">
+                                Streaming o Exigente
+                            </label>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="col datos">
+                <h5>Presupuesto</h5>
+                <form id="form3">
+                    <div class="inputs fw-light">
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault9"
+                                value="Lo más económico">
+                            <label class="form-check-label" for="flexRadioDefault9">
+                                Lo más económico
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault10"
+                                value="Equilibrado">
+                            <label class="form-check-label" for="flexRadioDefault10">
+                                Equilibrado
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault11"
+                                value="Lo mejor">
+                            <label class="form-check-label" for="flexRadioDefault11">
+                                Lo mejor
+                            </label>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="col datos">
+                <h5>Case</h5>
+                <form id="form4">
+                    <div class="inputs fw-light" fw-light">
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault13"
+                                value="Mini (ITX)">
+                            <label class="form-check-label" for="flexRadioDefault13">
+                                Mini (ITX)
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault14"
+                                value="Pequeño (Micro ATX)">
+                            <label class="form-check-label" for="flexRadioDefault14">
+                                Pequeño (Micro ATX)
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault15"
+                                value="Estándar (ATX)">
+                            <label class="form-check-label" for="flexRadioDefault15">
+                                Estándar (ATX)
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault16"
+                                value="Gigante(ATX y EATX)">
+                            <label class="form-check-label" for="flexRadioDefault16">
+                                Gigante(ATX y EATX)
+                            </label>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="col datos">
+                <h5>Diseño</h5>
+                <form id="form5">
+                    <div class="inputs fw-light">
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault17"
+                                value="Básico">
+                            <label class="form-check-label" for="flexRadioDefault17">
+                                Básico
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault18"
+                                value="Minimalista">
+                            <label class="form-check-label" for="flexRadioDefault18">
+                                Minimalista
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault19"
+                                value="Con RGB">
+                            <label class="form-check-label" for="flexRadioDefault19">
+                                Con RGB
+                            </label>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="col datos">
+                <h5>Refrigeración</h5>
+                <form id="form6">
+                    <div class="inputs fw-light">
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault20"
+                                value="Stock">
+                            <label class="form-check-label" for="flexRadioDefault20">
+                                Stock
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault21"
+                                value="Aire">
+                            <label class="form-check-label" for="flexRadioDefault21">
+                                Aire
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault22"
+                                value="Líquida">
+                            <label class="form-check-label" for="flexRadioDefault22">
+                                Líquida
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col datos">
+                <h5>Overclocking</h5>
+                <form id="form7">
+                    <div class="inputs fw-light">
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault23"
+                                value="Sí">
+                            <label class="form-check-label" for="flexRadioDefault23">
+                                Sí
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault24"
+                                value="No">
+                            <label class="form-check-label" for="flexRadioDefault24">
+                                No
+                            </label>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary btn-lg px-4 mt-3 mb-5" onclick="recomendado()">Consultar</button>
+        </div>
+        <h2 class="tt-type fw-bold mb-5">Te podría interesar...</h2>
+
+        <div id="recommended" class="productSelected">
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="container bg-glass text-white">
+            <div class="row text-start">
+                <div class="col-lg-5 col-xs-12 logo">
+                    <img src="../img/PLogos.png">
+                </div>
+                <div class="col-lg-2 col-xs-12 garanty">
+                    <h6 class="mt-lg-0 mt-sm-3 fw-bold">Garantías</h6>
+                    <ul class="m-0 p-0 list-unstyled">
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Métodos de Pago</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-xs-12 more-info">
+                    <h6 class="mt-lg-0 mt-sm-4 fw-bold">Más Información</h6>
+                    <ul class="m-0 p-0 list-unstyled">
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-xs-12 suscribe">
+                    <h6 class="mt-lg-0 mt-sm-4 fw-bold">Entérate antes</h6>
+                    <p>Obten descuentos exclusivos</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control email">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary-dark joinus" type="submit">
+                                Unirse
+                            </button>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col social-media">
+                    <ul class="list-unstyled d-flex justify-content-sm-end">
+                        <p class="px-4">Siguenos:</p>
+                        <li class="px-4"><a
+                                href="https://www.facebook.com/Grupo-de-Estudio-Scorpion-109415527418907/"><i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li class="px-4"><a href="https://www.instagram.com/webdevofficial/"><i
+                                    class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="px-4"><a href="https://github.com/alimiSM/webDesign"><i
+                                    class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col copyright">
+                    <p class=""><small class="text-white-50">© 2021. OfficeTec. All Rights Reserved.</small></p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/items.js"></script>
+
+    <script src="../js/search.js"></script>
+    <script src="../js/user.js"></script>
+    <script src="../js/productoIdeal.js"></script>
+
+
+
+</body>
+
+</html>

@@ -18,7 +18,8 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--Light Slider-->
-  <link type="text/css" rel="stylesheet" href="../css/lightslider.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.3/css/lightslider.min.css" rel="stylesheet"
+    media="all">
   <!-- Bootstrap -->
   <link href="../css/bootstrap.css" rel="stylesheet" />
   <!--SCRIPTS-->
@@ -44,17 +45,17 @@
             <a class="nav-link mx-3" href="index.html">Inicio</a>
           </li>
           <li class="nav-item dropdown has-megamenu">
-            <a class="nav-link dropdown-toggle mx-3" href="#" data-bs-toggle="dropdown">Tienda</a>
+            <a class="nav-link dropdown-toggle mx-3" data-bs-toggle="dropdown-menu" href="tienda.html">Tienda</a>
             <div class="dropdown-menu megamenu" role="menu">
               <div class="row g-3">
                 <div class="col-lg-3 col-6">
                   <div class="col-megamenu">
                     <h6 class="title fw-bold">Computadoras</h6>
                     <ul class="list-unstyled">
-                      <li><a href="#">Hogar y Oficina</a></li>
+                      <li><a href="#">Multimedia</a></li>
                       <li><a href="#">Gamer</a></li>
                       <li><a href="#">Edición</a></li>
-                      <li><a href="#">Ingeniería</a></li>
+                      <li><a href="#">Streaming u Otros</a></li>
                     </ul>
                   </div>
                   <!-- col-megamenu.// -->
@@ -65,7 +66,7 @@
                     <h6 class="title fw-bold"><a id="dataCat" class="text-dark text-decoration-none"
                         href="tiendaMenu.html">Laptops</a></h6>
                     <ul class="list-unstyled">
-                      <li><a href="#">Hogar y Oficina</a></li>
+                      <li><a href="#">Multimedia</a></li>
                       <li><a href="#">Gamer</a></li>
                       <li><a href="#">Profesional</a></li>
                     </ul>
@@ -277,19 +278,19 @@
     <div class="bx-add">
       <ul class="list-unstyled tproducts">
         <li>
-          <div class="things"><img src="../img/pc.png" alt="transferencia">
+          <div class="things"><img src="../img/icons/pc.png" alt="transferencia">
             <h5>Computadoras</h5>
           </div>
           <div class="img-box bg-glass"></div>
         </li>
         <li>
-          <div class="things"><img src="../img/laptop.png" alt="transferencia">
+          <div class="things"><img src="../img/icons/laptop.png" alt="transferencia">
             <h5>Laptops</h5>
           </div>
           <div class="img-box bg-glass"></div>
         </li>
         <li>
-          <div class="things"><img src="../img/more.png" alt="transferencia">
+          <div class="things"><img src="../img/icons/more.png" alt="transferencia">
             <h5>Periféricos y Accesorios</h5>
           </div>
           <div class="img-box bg-glass"></div>
@@ -554,8 +555,8 @@
             <div class="detail-box">
               <!--type-------->
               <div class="type">
-                <a href="#">Laptop ASUS Zenbook UX425EA</a>
-                <span>L- Hogar y Oficina</span>
+                <a href="producto.html">Laptop ASUS Zenbook UX425EA</a>
+                <span>L- Profesional</span>
               </div>
               <!--price-------->
               <a href="#" class="price">$358</a>
@@ -642,7 +643,7 @@
               <!--type-------->
               <div class="type">
                 <a href="#">Monitor MSI 23.6"</a>
-                <span>Monitores</span>
+                <span>P- Monitores</span>
               </div>
               <!--price-------->
               <a href="#" class="price">$209.99</a>
@@ -766,8 +767,8 @@
             <div class="detail-box">
               <!--type-------->
               <div class="type">
-                <a href="#">Laptop ASUS Zenbook UX425EA</a>
-                <span>L- Hogar y Oficina</span>
+                <a href="producto.html">Laptop ASUS Zenbook UX425EA</a>
+                <span>L- Profesional</span>
               </div>
               <!--price-------->
               <a href="#" class="price">$358</a>
@@ -976,15 +977,15 @@
     <div class="bx-exp">
       <ul class="list-unstyled info">
         <li>
-          <img src="../img/money.png" alt="transferencia" />
+          <img src="../img/icons/money.png" alt="transferencia" />
           <h5>Paga por Transferencia</h5>
         </li>
         <li>
-          <img src="../img/card.png" alt="tarjeta" />
+          <img src="../img/icons/card.png" alt="tarjeta" />
           <h5>Pago seguro con Tarjeta</h5>
         </li>
         <li>
-          <img src="../img/envio.png" alt="envio" />
+          <img src="../img/icons/envio.png" alt="envio" />
           <h5>Envíos a Nivel Nacional</h5>
         </li>
       </ul>
@@ -1064,7 +1065,6 @@
 
   <script src="../js/search.js"></script>
   <script src="../js/user.js"></script>
-  <script src="../js/navdrop.js" type="text/javascript"></script>
 
 
 
