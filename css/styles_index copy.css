@@ -13,6 +13,11 @@
 
 /*Background*/
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   height: 100%;
   font-family: -apple-system, Roboto, sans-serif;
@@ -24,7 +29,6 @@ body {
   background: linear-gradient(222deg, rgba(1,4,0,1) 0%, rgba(48,51,46,1) 100%);*/
   text-align: center;
   color: var(--blanco);
-  
 }
 
 a {
@@ -65,34 +69,34 @@ a {
   background-color: var(--turquesa);
   border-radius: 10px;
   width: auto;
-  height: 145px;
-  padding: 15px;
   text-align: center;
 }
 
 .announcement h4 {
   font-weight: 800;
   text-shadow: 3px 3px 0px rgb(0 0 0 / 40%);
-  margin: 0;
 }
 
 .announcement h4,
 .announcement span,
-.announcement button {
+.announcement a {
   color: var(--blanco);
 }
 
-.announcement span:hover {
-  color: var(--blanco);
+.col-sm-0 {
+  flex: 0 0 auto;
+  width: 1.3333333333%;
 }
 
-.announcement button {
+.announcement a {
   background-color: transparent;
   border-radius: 10px;
   border: 1px solid var(--blanco);
   font-weight: bold;
-  padding: 5px;
-  width: 100px;
+}
+
+.play {
+  margin-top: -20%;
 }
 
 .icbo {
@@ -144,15 +148,15 @@ a {
   right: 0px;
 }
 
-.w-45{
-  width: 48.5%;
+#i-1,
+#i-2,
+#i-3,
+#i-4,
+#txt-area {
+  border-radius: 10px;
 }
 
-.w-45,#txt-area{
-  border-radius:10px;
-}
-
-#txt-area{
+#txt-area {
   height: 12rem;
 }
 
@@ -168,28 +172,30 @@ a {
   height: 200px;
 }
 
-.productSelected{
+.productSelected {
   margin-bottom: 30%;
 }
 
 .user_team,
-.contact-bx,#success-purchase {
+.contact-bx,
+#success-purchase {
   border-radius: 45px;
 }
 
-#success-purchase{
-  width:30%;
-  margin: 0 auto;
-  margin-top:25%;
-  margin-bottom:25%;
-
+.me-6 {
+  margin-right: 6rem;
 }
 
+#success-purchase {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
 
 .contact-bx {
   width: 350px;
   height: 250px;
-
 }
 
 #fav #heart {
@@ -199,17 +205,16 @@ a {
   right: 30px;
 }
 
-.clear-both{
+.clear-both {
   clear: both;
 }
 
-
-.user-faq{
-  width:15%;
+.user-faq {
+  width: 15%;
 }
 
-.q-faq{
-  width:10%;
+.q-faq {
+  width: 10%;
   height: 10%;
 }
 
@@ -232,7 +237,8 @@ a {
 }
 
 .searchbar #search.active,
-#user #me.active, #cart #shop.active {
+#user #me.active,
+#cart #shop.active {
   background: var(--turquesa);
   transition: all 0.3s ease;
 }
@@ -407,12 +413,17 @@ a {
 
 #stars-cr .not,
 .not-disc,
-#rs {
+#rs,
+#txtAll {
   opacity: 0.35;
 }
 
+#txtAll:hover {
+  opacity: 1;
+}
+
 .carousel-caption h1 {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .carousel-caption {
@@ -468,7 +479,6 @@ a {
   padding: 10px 20px;
   box-sizing: border-box;
 }
-
 
 .type {
   display: flex;
@@ -598,11 +608,19 @@ footer .container .row li a:hover {
     margin-left: 24.8%;
   }
 
-  .navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{   }
-	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
 
+li .things:hover{
+  transform:scale(1.25);
 }
 
 /* ============ desktop view .end// ============ */
@@ -615,35 +633,25 @@ footer .container .row li a:hover {
     max-height: 90vh;
     margin-top: 10px;
   }
-  .icons {
-    opacity: 0;
-  }
-  .carousel-caption p {
-    margin-bottom: 0;
-    font-size: 0.6rem;
-    line-height: 1.4;
-  }
 
   .carousel-caption h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
-  .carousel-caption h6 {
-    font-size: 0.7rem;
+  .icons {
+    position: relative;
+    right: 25%;
   }
 
-  .carousel-item {
-    height: 24rem;
+  .searchbar input[type="text"].active {
+    width: 120px;
   }
+  
 
-  .carousel-item > img {
-    height: 24rem;
-  }
 
   .not-disc,
   .price-final {
     margin-top: 0.25rem;
-    font-size: 0.8rem;
   }
 
   .container .box-title .behind {
@@ -653,6 +661,10 @@ footer .container .row li a:hover {
   .container .box-title .into {
     margin-top: -8%;
     font-size: 20px;
+  }
+
+  .img-select {
+    display: inline-block;
   }
 }
 

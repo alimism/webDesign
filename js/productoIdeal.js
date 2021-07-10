@@ -64,7 +64,7 @@ function clasificar(productSelected) {
         if (producto == 'Laptop') {
             console.log('Seleccionaste ' + producto)
 
-            data[0] = '<div class="col datos"><h5>Uso</h5><form id="form2"><div class="inputs fw-light"><div class="form-check"> <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault5" value="Multimedia"> <label class="form-check-label" for="flexRadioDefault5"> Multimedia </label></div><div class="form-check"> <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault6" value="Gaming"> <label class="form-check-label" for="flexRadioDefault6"> Gaming </label></div><div class="form-check"> <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault7" value="Edición/Profesional"> <label class="form-check-label" for="flexRadioDefault7"> Edición/Profesional </label></div></div></form></div>';
+            data[0] = '<div class="col datos"><h5>Uso</h5><form id="form2"><div class="inputs fw-light"><div class="form-check"> <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault5" value="Multimedia"> <label class="form-check-label" for="flexRadioDefault5"> Multimedia </label></div><div class="form-check"> <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault6" value="Gaming"> <label class="form-check-label" for="flexRadioDefault6"> Gaming </label></div><div class="form-check"> <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault7" value="Edición"> <label class="form-check-label" for="flexRadioDefault7"> Edición/Profesional </label></div></div></form></div>';
 
             data[1] = '<div class="col datos"><h5>Presupuesto</h5><form id="form3"><div class="inputs fw-light"><div class="form-check"> <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault9" value="Lo más económico"> <label class="form-check-label" for="flexRadioDefault9"> Lo más económico </label></div><div class="form-check"> <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault10" value="Equilibrado"> <label class="form-check-label" for="flexRadioDefault10"> Equilibrado </label></div><div class="form-check"> <input class="form-check-input" autocomplete="off" type="radio" name="flexRadioDefault" id="flexRadioDefault11" value="Lo mejor"> <label class="form-check-label" for="flexRadioDefault11"> Lo mejor </label></div></div></form></div>';
 
@@ -237,9 +237,9 @@ function recomendado() {
 
             f6 = ($('input[name=flexRadioDefault]:checked', '#form6').val());
 
-            if (f2 == 'Profesional' && f3 == 'Equilibrado' && f4 == 'Estándar' && f5 == 'Minimalista' && f6 == 'Grande (15.6 a más)') {
+            if (f2 == 'Edición' && f3 == 'Equilibrado' && f4 == 'Estándar' && f5 == 'Minimalista' && f6 == 'Grande (15.6 a más)') {
 
-                filtro = '<ul class="list-group list-unstyled list-group-horizontal"><li class="item-f"><div class="box bg-glass"><div class="slide-img"> <img alt="6" src="../img/6.png" /><div class="overlay"><a href="#" class="buy-btn">Comprar Ahora</a></div></div><div class="detail-box"><div class="type"> <a href="producto.html">Laptop ASUS Zenbook UX425EA</a> <span>L- Profesional</span></div><a href="#" class="price">$358</a></div></div></li><li class="item-g"><div class="box bg-glass"><div class="slide-img"> <img alt="6" src="../img/10.png" /><div class="overlay"><a href="#" class="buy-btn">Comprar Ahora</a></div></div><div class="detail-box"><div class="type"> <a href="#">Laptop ASUS VivoBook 14</a> <span>L- Profesional</span></div><a href="#" class="price">$258</a></div></div></li></ul>';
+                filtro = '<ul class="list-group list-unstyled list-group-horizontal-sm"><li class="item-f"><div class="box bg-glass"><div class="slide-img"> <img alt="6" src="../img/6.png" /><div class="overlay"><a href="#" class="buy-btn">Comprar Ahora</a></div></div><div class="detail-box"><div class="type"> <a href="producto.html">Laptop ASUS Zenbook UX425EA</a> <span>L- Profesional</span></div><a href="#" class="price">$358</a></div></div></li><li class="item-g"><div class="box bg-glass"><div class="slide-img"> <img alt="6" src="../img/10.png" /><div class="overlay"><a href="#" class="buy-btn">Comprar Ahora</a></div></div><div class="detail-box"><div class="type"> <a href="#">Laptop ASUS VivoBook 14</a> <span>L- Profesional</span></div><a href="#" class="price">$258</a></div></div></li></ul>';
                 document.getElementById('recommended').innerHTML = filtro;
                 console.log('Mostrando Elemento');
             }
@@ -279,7 +279,7 @@ function recomendado() {
 
                 f4 = ($('input[name=flexRadioDefault]:checked', '#form4').val());
 
-                if (f2 == 'Otros' && f3 == null && f4 == 'Soportes') {
+                if ((f2 == 'PC' || f2 =='Laptop') && f3 == null && f4 == 'Soportes') {
                     filtro = '<ul class="list-unstyled"><li class="item-f"><div class="box bg-glass"><div class="slide-img"> <img alt="3" src="../img/3.png" /><div class="overlay"><a href="#" class="buy-btn">Comprar Ahora</a></div></div><div class="detail-box"><div class="type"> <a href="#">PC Dock Pro - Multiuso</a> <span>Accesorios</span></div><a href="#" class="price">$102</a></div></div></li></ul>';
                     document.getElementById('recommended').innerHTML = filtro;
                     console.log('Mostrando Elemento');

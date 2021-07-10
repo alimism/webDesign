@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css">
+  <link rel="stylesheet" href="../css/style_index.css">
   <!--Light Slider-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.3/css/lightslider.min.css" rel="stylesheet"
     media="all">
@@ -30,8 +32,7 @@
 </head>
 
 <body>
-  <img id="fondo" src="../img/Recurso 1.png" />
-  <!--NAVIGATION-->
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="../img/Plogos.png" /></a>
@@ -45,7 +46,7 @@
             <a class="nav-link mx-3" href="index.html">Inicio</a>
           </li>
           <li class="nav-item dropdown has-megamenu">
-            <a class="nav-link dropdown-toggle mx-3" data-bs-toggle="dropdown-menu" href="tienda.html">Tienda</a>
+            <a class="nav-link dropdown-toggle mx-3" data-bs-toggle="dropdown" href="/tienda.html">Tienda</a>
             <div class="dropdown-menu megamenu" role="menu">
               <div class="row g-3">
                 <div class="col-lg-3 col-6">
@@ -58,9 +59,9 @@
                       <li><a href="#">Streaming u Otros</a></li>
                     </ul>
                   </div>
-                  <!-- col-megamenu.// -->
+
                 </div>
-                <!-- end col-3 -->
+
                 <div class="col-lg-3 col-6">
                   <div class="col-megamenu">
                     <h6 class="title fw-bold"><a id="dataCat" class="text-dark text-decoration-none"
@@ -71,9 +72,9 @@
                       <li><a href="#">Profesional</a></li>
                     </ul>
                   </div>
-                  <!-- col-megamenu.// -->
+
                 </div>
-                <!-- end col-3 -->
+
                 <div class="col-lg-3 col-6">
                   <div class="col-megamenu">
                     <h6 class="title fw-bold">Periféricos y Accesorios</h6>
@@ -85,32 +86,37 @@
                       <li><a href="#">Accesorios</a></li>
                     </ul>
                   </div>
-                  <!-- col-megamenu.// -->
+
                 </div>
 
-                <div class="col-lg-3 col-6">
-                  <div class="col-megamenu announcement container">
-                    <a href="../productoIdeal.html">
+                <div class="col-lg-3 col-md-6">
+                  <div class="col-megamenu announcement container py-3">
                       <h4>¿BÚSQUEDA PERSONALIZADA?</h4>
                       <span>ENCUENTRA TU PRODUCTO IDEAL</span><br>
-                      <button><a class="text-decoration-none text-white" href="productoIdeal.html">Ingresar</a></button>
+                      <a id="btnIdeal" class="btn btn-primary btn-lg" href="productoIdeal.html" role="button">Probar</a>
                     </a>
                   </div>
-                  <!-- col-megamenu.// -->
+
                 </div>
 
               </div>
-              <!-- end row -->
+              <div class="row g-3">
+                <div class="col-lg-12 col-12 rounded-3 mt-4 p-1">
+                  <div class="col-megamenu text-center">
+                    <h6 class="title fst-italic"><a id="txtAll" href="tienda.html">Ver toda la Tienda</a></h6>
+                  </div>
+                </div>
+              </div>
+
             </div>
-            <!-- dropdown-mega-menu.// -->
+
           </li>
           <li class="nav-item mx-3"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
           <li class="nav-item mx-3"><a class="nav-link" href="contacto.html">Contacto</a></li>
           <li class="nav-item mx-3"><a class="nav-link" href="faq.html">FAQ</a></li>
           <!-- <li class="nav-item mx-2 "><a class="nav-link" href="#">Producto Ideal</a> -->
-        </ul>
 
-        <div class="icons">
+        <li class="icons">
           <div class="searchbar ico">
             <input type="text" placeholder="Estoy buscando..." />
             <div id="search"><i class="iconly-Search icbo"></i></div>
@@ -164,13 +170,15 @@
               <div id="shop"><i class="iconly-Buy icbo"></i></div>
             </a>
           </div>
-        </div>
+        </li>
+      </ul>
+
       </div>
-      <!-- navbar-collapse.// -->
+
     </div>
-    <!-- container-fluid.// -->
+
   </nav>
-  <!--END NAVBAR-->
+
 
   <!--SLIDER START-->
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -196,9 +204,7 @@
                 <i class="iconly-Star icbo"></i>
               </div>
               <h1>Laptop Asus Zenbook 14 - Gris</h1>
-              <h6>i5 11TH GEN | 14" FHD | 8GB RAM | SSD 512 GB | NUMBER PAD 2.0</h6>
-              <p>Su procesador Intel Core i5-1135G7 y 8GB de RAM te permitirán operar varias aplicaciones sin
-                complicaciones.</p>
+              <h6>i5 11TH GEN | 14" FHD | 8GB RAM | SSD 512 GB </h6>
               <h5 class="not-disc">S/. 6 899</h5>
               <h5 class="price-final">S/. 1 380</h5>
               <p><a class="add btn btn-lg btn-primary" href="#">Agregar</a></p>
@@ -221,8 +227,8 @@
             </div>
             <h1>RYZEN 7 5800X + RTX 3060 12GB</h1>
             <h6>
-              16GB RAM 3200 MHZ | SSD 500GB | HDD 4TB | ASUS B550-M PLUS |
-              FUENTE 750W SEMI-MODULAR BRONZE
+              16GB RAM 3200 MHZ | SSD 500GB | ASUS B550-M PLUS |
+              FUENTE 750W SMB
             </h6>
             <h5 class="not-disc">S/. 9 200</h5>
             <h5 class="price-final">S/. 8 799</h5>
@@ -243,12 +249,11 @@
               <i class="iconly-Star icbo"></i>
               <i class="iconly-Star icbo not"></i>
             </div>
-            <h1>Monitor Gaming Samsung 49" CURVO</h1>
+            <h1>Monitor Samsung 49" CURVO</h1>
             <h6>
-              49" QLED 32:9 | 144 HZ | ILUMINACIÓN "ARENA" | TABLERO OSD |
-              EASY SETTING BOX | PBP
+              49" QLED 32:9 | 144 HZ | PBP
             </h6>
-            <p>Con la nueva tecnología de punto cuántico de metal y panel VA con 1ms MPRT</p>
+            <p>Monitor Inmersivo</p>
             <h5 class="not-disc">S/. 5 200</h5>
             <h5 class="price-final">S/. 4 500</h5>
             <p><a class="btn btn-lg btn-primary add" href="#">Agregar</a></p>
@@ -278,19 +283,20 @@
     <div class="bx-add">
       <ul class="list-unstyled tproducts">
         <li>
-          <div class="things"><img src="../img/icons/pc.png" alt="transferencia">
+          <div class="things">
+            <img src="../img/icons/pc.png" alt="pc">
             <h5>Computadoras</h5>
           </div>
           <div class="img-box bg-glass"></div>
         </li>
         <li>
-          <div class="things"><img src="../img/icons/laptop.png" alt="transferencia">
+          <div class="things"><img src="../img/icons/laptop.png" alt="laptop">
             <h5>Laptops</h5>
           </div>
           <div class="img-box bg-glass"></div>
         </li>
         <li>
-          <div class="things"><img src="../img/icons/more.png" alt="transferencia">
+          <div class="things"><img src="../img/icons/more.png" alt="periyacce">
             <h5>Periféricos y Accesorios</h5>
           </div>
           <div class="img-box bg-glass"></div>
@@ -1003,18 +1009,18 @@
         <div class="col-lg-2 col-xs-12 garanty">
           <h6 class="mt-lg-0 mt-sm-3 fw-bold">Garantías</h6>
           <ul class="m-0 p-0 list-unstyled">
-            <li><a href="#">Términos y Condiciones</a></li>
-            <li><a href="#">Métodos de Pago</a></li>
-            <li><a href="#">Devoluciones</a></li>
+            <li><a href="faq.html">Términos y Condiciones</a></li>
+            <li><a href="faq.html">Métodos de Pago</a></li>
+            <li><a href="faq.html">Devoluciones</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-xs-12 more-info">
           <h6 class="mt-lg-0 mt-sm-4 fw-bold">Más Información</h6>
           <ul class="m-0 p-0 list-unstyled">
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="faq.html">FAQ</a></li>
           </ul>
         </div>
 
@@ -1047,7 +1053,7 @@
 
       <div class="row mt-5">
         <div class="col copyright">
-          <p class=""><small class="text-white-50">© 2021. OfficeTec. All Rights Reserved.</small></p>
+          <p class=""><small class="text-white-50">© 2021. OfficeTec - Grupo 01. All Rights Reserved.</small></p>
         </div>
       </div>
 
@@ -1062,9 +1068,10 @@
     integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="../js/items.js"></script>
-
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
   <script src="../js/search.js"></script>
   <script src="../js/user.js"></script>
+  <img id="fondo2" src="../img/fondo2.png" />
 
 
 
