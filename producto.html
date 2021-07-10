@@ -176,7 +176,29 @@
                         <div id="heart"><i class="iconly-Heart icbo"></i></div>
                     </div>
                     <div id="cart" class="ico">
-                        <a href="../carrito.html">
+                        <div id="carrito" class="dropdown-cart">
+                            <table id="lista-carrito" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cartModal">
+                                    <tr>
+                                        <td colspan="4">No hay Productos</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <a href="#" id="vaciar-carrito" class="btn btn-secondary" onclick="nueva()">Vaciar
+                                Carrito</a>
+                            <a href="carrito.html" id="procesar-pedido" class="btn btn-primary-dark">Procesar
+                                Compra</a>
+                        </div>
+                        <a>
                             <div id="shop"><i class="iconly-Buy icbo"></i></div>
                         </a>
                     </div>
@@ -227,14 +249,14 @@
                     <i class="iconly-Play icbo"></i>
                 </button>
 
-                <div class="modal fade" id="video1" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true" data-bs-backdrop="static">
+                <div class="modal fade" id="video1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+                    data-bs-backdrop="static">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Video</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close" onclick="stopVideo()"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    onclick="stopVideo()"></button>
                             </div>
                             <div id="player" class="modal-body container-fluid">
 
@@ -264,8 +286,8 @@
                 <h2 id="6p" class="text-primary mb-3">$358</h2>
                 <div class="addHeart row align-items-center">
                     <div class="col-5">
-                        <p><a id="6" value="Laptop ASUS Zenbook UX425EA" class="btn btn-lg btn-primary add px-4"
-                                href="#" onclick="agregarAhora(this.id)">Agregar al Carrito</a></p>
+                        <a id="6" value="Laptop ASUS Zenbook UX425EA" class="btn btn-lg btn-primary add px-4" href="#"
+                            onclick="agregarAhora(this.id)">Agregar al Carrito</a>
                     </div>
                     <div class="col-2 p-0">
                         <i class="iconly-Heart icbo iconly-Heart-P"></i>
@@ -485,20 +507,20 @@
                 <div class="col-lg-2 col-xs-12 garanty">
                     <h6 class="mt-lg-0 mt-sm-3 fw-bold">Garantías</h6>
                     <ul class="m-0 p-0 list-unstyled">
-                      <li><a href="faq.html">Términos y Condiciones</a></li>
-                      <li><a href="faq.html">Métodos de Pago</a></li>
-                      <li><a href="faq.html">Devoluciones</a></li>
+                        <li><a href="faq.html">Términos y Condiciones</a></li>
+                        <li><a href="faq.html">Métodos de Pago</a></li>
+                        <li><a href="faq.html">Devoluciones</a></li>
                     </ul>
-                  </div>
-          
-                  <div class="col-lg-2 col-xs-12 more-info">
+                </div>
+
+                <div class="col-lg-2 col-xs-12 more-info">
                     <h6 class="mt-lg-0 mt-sm-4 fw-bold">Más Información</h6>
                     <ul class="m-0 p-0 list-unstyled">
-                      <li><a href="nosotros.html">Nosotros</a></li>
-                      <li><a href="contacto.html">Contacto</a></li>
-                      <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                     </ul>
-                  </div>
+                </div>
 
                 <div class="col-lg-3 col-xs-12 suscribe">
                     <h6 class="mt-lg-0 mt-sm-4 fw-bold">Entérate antes</h6>
@@ -532,7 +554,8 @@
 
             <div class="row mt-5">
                 <div class="col copyright">
-                    <p class=""><small class="text-white-50">© 2021. OfficeTec - Grupo 01. All Rights Reserved.</small></p>
+                    <p class=""><small class="text-white-50">© 2021. OfficeTec - Grupo 01. All Rights Reserved.</small>
+                    </p>
                 </div>
             </div>
 
@@ -540,7 +563,7 @@
     </footer>
     <div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
-      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

@@ -163,7 +163,29 @@
             <div id="heart"><i class="iconly-Heart icbo"></i></div>
           </div>
           <div id="cart" class="ico">
-            <a href="../carrito.html">
+            <div id="carrito" class="dropdown-cart">
+              <table id="lista-carrito" class="table">
+                  <thead>
+                      <tr>
+                          <th>Imagen</th>
+                          <th>Nombre</th>
+                          <th>Precio</th>
+                          <th></th>
+                      </tr>
+                  </thead>
+                  <tbody id="cartModal">
+                      <tr>
+                          <td colspan="4">No hay Productos</td>
+                      </tr>
+                  </tbody>
+              </table>
+
+              <a href="#" id="vaciar-carrito" class="btn btn-secondary" onclick="nueva()">Vaciar
+                  Carrito</a>
+              <a href="carrito.html" id="procesar-pedido" class="btn btn-primary-dark">Procesar
+                  Compra</a>
+          </div>
+            <a>
               <div id="shop"><i class="iconly-Buy icbo"></i></div>
             </a>
           </div>
@@ -321,6 +343,7 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="../js/items.js"></script>
   <script src="../js/loader.js"></script>
+  <script src="../js/store.js"></script>
 
   <script src="../js/search.js"></script>
   <script src="../js/user.js"></script>

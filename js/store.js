@@ -6,10 +6,12 @@ if (document.readyState == 'loading') {
 
 function ready() {
     carrito();
+
 }
 
 function carrito() {
     var data = "";
+    var dataModal = "";
     var total = 0;
     if (localStorage.length == 0) {
         data += '<tr><td colspan="4">No hay productos</td></tr>';
@@ -22,19 +24,19 @@ function carrito() {
             switch (parseInt(info.id)) {
                 case 5:
                     data += '<tr><td id=""><img class="w-100" src="../img/' + info.id + '.png"><br><p id="' + i + '">' + info.name + '</td><td class="table-name">$' + info.precio + '</td><td><button class="min" onclick="rest(this.id)" id="' + i + 'min">-</button><input id="' + i + 'in" class="inp w-25 mx-2" type="text" value="1" ><button class="max" onclick="add(this.id)" id="' + i + 'max">+</button></td><td id="' + i + 'sub">$' + info.total + '</td><td><button id="' + key + '" class="btn btn-secondary" onclick="eliminar(this.id)">x</button></td></tr>';
-
+                    dataModal += '<tr><td id=""><img class="w-100" src="../img/' + info.id + '.png"></td><td>' + info.name + '</td><td class="table-name">$' + info.precio + '</td></tr>';
                     break;
                 case 6:
                     data += '<tr><td id=""><img class="w-100" src="../img/' + info.id + '.png"><br><p id="' + i + '">' + info.name + '</td><td class="table-name">$' + info.precio + '</td><td><button class="min" onclick="rest(this.id)" id="' + i + 'min">-</button><input id="' + i + 'in" class="inp w-25 mx-2" type="text" value="1" ><button class="max" onclick="add(this.id)" id="' + i + 'max">+</button></td><td id="' + i + 'sub">$' + info.total + '</td><td><button id="' + key + '" class="btn btn-secondary" onclick="eliminar(this.id)">x</button></td></tr>';
-
+                    dataModal += '<tr><td id=""><img class="w-100" src="../img/' + info.id + '.png"></td><td>' + info.name + '</td><td class="table-name">$' + info.precio + '</td></tr>'
                     break;
                 case 7:
                     data += '<tr><td id=""><img class="w-100" src="../img/' + info.id + '.png"><br><p id="' + i + '">' + info.name + '</td><td class="table-name">$' + info.precio + '</td><td><button class="min" onclick="rest(this.id)" id="' + i + 'min">-</button><input id="' + i + 'in" class="inp w-25 mx-2" type="text" value="1" ><button class="max" onclick="add(this.id)" id="' + i + 'max">+</button></td><td id="' + i + 'sub">$' + info.total + '</td><td><button id="' + key + '" class="btn btn-secondary" onclick="eliminar(this.id)">x</button></td></tr>';
-
+                    dataModal += '<tr><td id=""><img class="w-100" src="../img/' + info.id + '.png"></td><td>' + info.name + '</td><td class="table-name">$' + info.precio + '</td></tr>'
                     break;
                 case 8:
                     data += '<tr><td id=""><img class="w-100" src="../img/' + info.id + '.png"><br><p id="' + i + '">' + info.name + '</td><td class="table-name">$' + info.precio + '</td><td><button class="min" onclick="rest(this.id)" id="' + i + 'min">-</button><input id="' + i + 'in" class="inp w-25 mx-2" type="text" value="1" ><button class="max" onclick="add(this.id)" id="' + i + 'max">+</button></td><td id="' + i + 'sub">$' + info.total + '</td><td><button id="' + key + '" class="btn btn-secondary" onclick="eliminar(this.id)">x</button></td></tr>';
-
+                    dataModal += '<tr><td id=""><img class="w-100" src="../img/' + info.id + '.png"></td><td>' + info.name + '</td><td class="table-name">$' + info.precio + '</td></tr>'
                     break;
             }
             total += parseFloat(info.total);
@@ -42,9 +44,9 @@ function carrito() {
             console.log(total);
         }
     }
+    document.getElementById('cartModal').innerHTML = dataModal;
 
     if (document.getElementById('cartPage') != null) {
-
         document.getElementById('cartPage').innerHTML = data;
         document.getElementById("subTotal").innerHTML = '$' + total;
 
@@ -116,9 +118,8 @@ function completar() {
 function eliminar(clicked_id) {
 
     localStorage.removeItem(clicked_id);
-
-
     carrito();
+
 }
 
 // function ver() {
@@ -134,19 +135,6 @@ function agregarAhora(clicked_id) {
 
 
     var id = clicked_id;
-    for (var i = 0; i <= localStorage.length - 1; i++) {
-        var key = localStorage.key(i);
-        console.log(key);
-        var info = JSON.parse(localStorage.getItem(key));
-        console.log(info.name)
-
-        if (document.getElementById(id).getAttribute('value') == info.name) {
-            alert('Ya agregó esta producto');
-        }
-
-    }
-
-
     console.log(document.getElementById(id).getAttribute('value'));
     var name = document.getElementById(id).getAttribute('value');
     var cantidad = 1;
@@ -165,7 +153,7 @@ function agregarAhora(clicked_id) {
     };
 
     localStorage.setItem(name, JSON.stringify(datos));
-
+    carrito();
 
 }
 
@@ -227,6 +215,7 @@ function updateTotal(item, qty) {
         precio: precio,
         total: newTotal,
         cantidad: cantidad,
+
 
     };
 

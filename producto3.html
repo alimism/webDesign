@@ -176,7 +176,29 @@
                         <div id="heart"><i class="iconly-Heart icbo"></i></div>
                     </div>
                     <div id="cart" class="ico">
-                        <a href="../carrito.html">
+                        <div id="carrito" class="dropdown-cart">
+                            <table id="lista-carrito" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cartModal">
+                                    <tr>
+                                        <td colspan="4">No hay Productos</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <a href="#" id="vaciar-carrito" class="btn btn-secondary" onclick="nueva()">Vaciar
+                                Carrito</a>
+                            <a href="carrito.html" id="procesar-pedido" class="btn btn-primary-dark">Procesar
+                                Compra</a>
+                        </div>
+                        <a>
                             <div id="shop"><i class="iconly-Buy icbo"></i></div>
                         </a>
                     </div>
@@ -239,9 +261,9 @@
                 <h2 id="8p" class="text-primary mb-3">$25</h2>
                 <div class="addHeart row align-items-center">
                     <div class="col-5">
-                        <p><a id="8" value="Cinta de Luces LED RGB + Controlador"
+                        <a id="8" value="Cinta de Luces LED RGB + Controlador"
                                 class="btn btn-lg btn-primary add px-4" href="#" onclick="agregarAhora(this.id)">Agregar
-                                al Carrito</a></p>
+                                al Carrito</a>
                     </div>
                     <div class="col-2 p-0">
                         <i class="iconly-Heart icbo iconly-Heart-P"></i>
